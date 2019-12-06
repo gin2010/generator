@@ -1,0 +1,3000 @@
+<?xml version="1.0" encoding="GBK" ?>
+<Data>
+  <TestCase>
+    <Bh>DZV001</Bh>
+    <CaseName>开具单行0%税率电子发票</CaseName>
+    <CaseId>51bs-2329</CaseId>
+    <Description>开具编号为DZV001的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV001</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD001</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT001check</DataList>
+    </Step>
+ </TestCase>
+
+  <TestCase>
+    <Bh>DZV002</Bh>
+    <CaseName>开具单行3%税率电子发票</CaseName>
+    <CaseId>51bs-2329</CaseId>
+    <Description>开具编号为DZV002的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV002</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD002</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT002check</DataList>
+    </Step>
+ </TestCase>
+ 
+ <TestCase>
+    <Bh>DZV003</Bh>
+    <CaseName>开具单行4%税率电子发票</CaseName>
+    <CaseId>51bs-2329</CaseId>
+    <Description>开具编号为DZV003的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV003</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD003</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT003check</DataList>
+    </Step>
+ </TestCase>
+ 
+ <TestCase>
+    <Bh>DZV004</Bh>
+    <CaseName>开具单行5%税率电子发票</CaseName>
+    <CaseId>51bs-2329</CaseId>
+    <Description>开具编号为DZV004的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV004</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD004</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT004check</DataList>
+    </Step>
+ </TestCase>
+ 
+ <TestCase>
+    <Bh>DZV005</Bh>
+    <CaseName>开具单行6%税率电子发票</CaseName>
+    <CaseId>51bs-2329</CaseId>
+    <Description>开具编号为DZV005的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV005</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD005</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT005check</DataList>
+    </Step>
+ </TestCase>
+ 
+ <TestCase>
+    <Bh>DZV006</Bh>
+    <CaseName>开具单行11%税率电子发票</CaseName>
+    <CaseId>51bs-2329</CaseId>
+    <Description>开具编号为DZV006的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV006</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD006</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT006check</DataList>
+    </Step>
+ </TestCase>
+ 
+ <TestCase>
+    <Bh>DZV007</Bh>
+    <CaseName>开具单行13%税率电子发票</CaseName>
+    <CaseId>51bs-2329</CaseId>
+    <Description>开具编号为DZV007的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV007</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD007</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT007check</DataList>
+    </Step>
+ </TestCase>
+ 
+ <TestCase>
+    <Bh>DZV008</Bh>
+    <CaseName>开具单行17%税率电子发票</CaseName>
+    <CaseId>51bs-2329</CaseId>
+    <Description>开具编号为DZV008的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV008</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD008</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT008check</DataList>
+    </Step>
+ </TestCase>
+ 
+ <TestCase>
+    <Bh>DZV009</Bh>
+    <CaseName>开具单行免税电子发票</CaseName>
+    <CaseId>51bs-2329</CaseId>
+    <Description>开具编号为DZV009的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV009</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD009</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT009check</DataList>
+    </Step>
+	</TestCase>
+	
+	<TestCase>
+    <Bh>DZV0010</Bh>
+    <CaseName>开具单行不征税电子发票</CaseName>
+    <CaseId>51bs-2329</CaseId>
+    <Description>开具编号为DZV0010的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV0010</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD0010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD0010</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0010check</DataList>
+    </Step>
+ </TestCase>
+  
+  <TestCase>
+    <Bh>DZV0011</Bh>
+    <CaseName>开具3行0%单税率电子发票</CaseName>
+    <CaseId>51bs-2330</CaseId>
+    <Description>开具编号为DZV0011的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+	  <TargetDataList>DZV0011</TargetDataList>
+    </Step>
+	<Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+	  <DataList>DZD0011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+	  <TargetDataList>DZD0011</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0011check</DataList>
+    </Step>
+ </TestCase>
+
+  <TestCase>
+    <Bh>DZV0012</Bh>
+    <CaseName>开具3行3%单税率电子发票</CaseName>
+    <CaseId>51bs-2330</CaseId>
+    <Description>开具编号为DZV0012的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0012</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0012</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0012</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0012</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0012check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0013</Bh>
+    <CaseName>开具3行4%单税率电子发票</CaseName>
+    <CaseId>51bs-2330</CaseId>
+    <Description>开具编号为DZV0013的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0013</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0013</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0013</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0013</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0013check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0014</Bh>
+    <CaseName>开具3行5%单税率电子发票</CaseName>
+    <CaseId>51bs-2330</CaseId>
+    <Description>开具编号为DZV0014的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0014</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0014</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0014</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0014</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0014check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0015</Bh>
+    <CaseName>开具3行6%单税率电子发票</CaseName>
+    <CaseId>51bs-2330</CaseId>
+    <Description>开具编号为DZV0015的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0015</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0015</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0015</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0015</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0015check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0016</Bh>
+    <CaseName>开具3行11%单税率电子发票</CaseName>
+    <CaseId>51bs-2330</CaseId>
+    <Description>开具编号为DZV0016的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0016</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0016</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0016check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0017</Bh>
+    <CaseName>开具3行13%单税率电子发票</CaseName>
+    <CaseId>51bs-2330</CaseId>
+    <Description>开具编号为DZV0017的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0017</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0017</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0017</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0017</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0017check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0018</Bh>
+    <CaseName>开具3行17%单税率电子发票</CaseName>
+    <CaseId>51bs-2330</CaseId>
+    <Description>开具编号为DZV0018的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0018</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0018</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0018</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0018</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0018check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0019</Bh>
+    <CaseName>开具3行免税单税率电子发票</CaseName>
+    <CaseId>51bs-2330</CaseId>
+    <Description>开具编号为DZV0019的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0019</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0019</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0019check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0020</Bh>
+    <CaseName>开具3行不征税单税率电子发票</CaseName>
+    <CaseId>51bs-2330</CaseId>
+    <Description>开具编号为DZV0020的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0020</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0020</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0020check</DataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <Bh>DZV0021</Bh>
+    <CaseName>开具3行普通多税率11%-13%-17%电子发票</CaseName>
+    <CaseId>51bs-2340</CaseId>
+    <Description>开具编号为DZV0021的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0021</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0021</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0021</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0021</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0021check</DataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <Bh>DZV0022</Bh>
+    <CaseName>开具3行普通多税率0%-4%-5%电子发票</CaseName>
+    <CaseId>51bs-2340</CaseId>
+    <Description>开具编号为DZV0022的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0022</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0022</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0022check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0023</Bh>
+    <CaseName>开具3行普通多税率0%-11%-13%电子发票</CaseName>
+    <CaseId>51bs-2340</CaseId>
+    <Description>开具编号为DZV0023的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0023</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0023</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0023check</DataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <Bh>DZV0024</Bh>
+    <CaseName>开具3行普通多税率0%-免税-不征税电子发票</CaseName>
+    <CaseId>51bs-2340</CaseId>
+    <Description>开具编号为DZV0024的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0024</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0024</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0024</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0024</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0024check</DataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <Bh>DZV0025</Bh>
+    <CaseName>开具8行0%单税率电子发票</CaseName>
+    <CaseId>51bs-2341</CaseId>
+    <Description>开具编号为DZV0025的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0025</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0025</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0025check</DataList>
+    </Step>
+  </TestCase>
+
+   <TestCase>
+    <Bh>DZV0026</Bh>
+    <CaseName>开具8行3%单税率电子发票</CaseName>
+    <CaseId>51bs-2341</CaseId>
+    <Description>开具编号为DZV0026的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0026</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0026</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0026check</DataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <Bh>DZV0027</Bh>
+    <CaseName>开具8行4%单税率电子发票</CaseName>
+    <CaseId>51bs-2341</CaseId>
+    <Description>开具编号为DZV0027的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0027</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0027</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0027check</DataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <Bh>DZV0028</Bh>
+    <CaseName>开具8行5%单税率电子发票</CaseName>
+    <CaseId>51bs-2341</CaseId>
+    <Description>开具编号为DZV0028的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0028</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0028</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0028check</DataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <Bh>DZV0029</Bh>
+    <CaseName>开具8行6%单税率电子发票</CaseName>
+    <CaseId>51bs-2341</CaseId>
+    <Description>开具编号为DZV0029的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0029</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0029</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0029</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0029</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0029check</DataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <Bh>DZV0030</Bh>
+    <CaseName>开具8行11%单税率电子发票</CaseName>
+    <CaseId>51bs-2341</CaseId>
+    <Description>开具编号为DZV0030的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0030</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0030</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0030check</DataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <Bh>DZV0031</Bh>
+    <CaseName>开具8行13%单税率电子发票</CaseName>
+    <CaseId>51bs-2341</CaseId>
+    <Description>开具编号为DZV0031的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0031</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0031</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0031check</DataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <Bh>DZV0032</Bh>
+    <CaseName>开具8行17%单税率电子发票</CaseName>
+    <CaseId>51bs-2341</CaseId>
+    <Description>开具编号为DZV0032的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0032</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0032</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0032check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0033</Bh>
+    <CaseName>开具8行免税单税率电子发票</CaseName>
+    <CaseId>51bs-2341</CaseId>
+    <Description>开具编号为DZV0033的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0033</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0033</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0033</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0033</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0033check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0034</Bh>
+    <CaseName>开具8行不征税单税率电子发票</CaseName>
+    <CaseId>51bs-2341</CaseId>
+    <Description>开具编号为DZV0034的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0034</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0034</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0034check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0035</Bh>
+    <CaseName>开具8行普通多税率6%-11%-13%-17%-6%-13%-17%-11%电子发票</CaseName>
+    <CaseId>51bs-2342</CaseId>
+    <Description>开具编号为DZV0035的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0035</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0035</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0035check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0036</Bh>
+    <CaseName>开具8行普通多税率3%-3%-5%-3%-5%-5%-3%-5%电子发票</CaseName>
+    <CaseId>51bs-2342</CaseId>
+    <Description>开具编号为DZV0036的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0036</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0036</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0036</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0036</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0036check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0037</Bh>
+    <CaseName>开具8行普通多税率0%-3%-0%-5%-5%-5%-3%-3%电子发票</CaseName>
+    <CaseId>51bs-2342</CaseId>
+    <Description>开具编号为DZV0037的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0037</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0037</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0037</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0037</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0037check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0038</Bh>
+    <CaseName>开具8行普通多税率0%-6%-13%-0%-6%-13%-17%-11%电子发票</CaseName>
+    <CaseId>51bs-2342</CaseId>
+    <Description>开具编号为DZV0038的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0038</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0038</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0038</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0038</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0038check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0039</Bh>
+    <CaseName>开具8行普通多税率6%-免税-13%-免税-4%-5%-17%-11%电子发票</CaseName>
+    <CaseId>51bs-2342</CaseId>
+    <Description>开具编号为DZV0039的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0039</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0039</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0039</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0039</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0039check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0040</Bh>
+    <CaseName>开具8行普通多税率3%-不征税-13%-不征税-4%-不征税-17%-11%电子发票</CaseName>
+    <CaseId>51bs-2342</CaseId>
+    <Description>开具编号为DZV0040的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0040</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0040</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0040check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0041</Bh>
+    <CaseName>开具8行普通多税率0%-不征税-13%-免税-4%-不征税-5%-11%电子发票</CaseName>
+    <CaseId>51bs-2342</CaseId>
+    <Description>开具编号为DZV0041的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0041</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0041</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0041</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0041</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0041check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0042</Bh>
+    <CaseName>开具最小行数清单9行普通单税率0%电子发票</CaseName>
+    <CaseId>51bs-2343</CaseId>
+    <Description>开具编号为DZV0042的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0042</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0042</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0042</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0042</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0042check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0043</Bh>
+    <CaseName>开具最小行数清单9行普通单税率3%电子发票</CaseName>
+    <CaseId>51bs-2343</CaseId>
+    <Description>开具编号为DZV0043的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0043</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0043</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0043</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0043</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0043check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0044</Bh>
+    <CaseName>开具最小行数清单9行普通单税率4%电子发票</CaseName>
+    <CaseId>51bs-2343</CaseId>
+    <Description>开具编号为DZV0044的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0044</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0044</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0044</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0044</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0044check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0045</Bh>
+    <CaseName>开具最小行数清单9行普通单税率5%电子发票</CaseName>
+    <CaseId>51bs-2343</CaseId>
+    <Description>开具编号为DZV0045的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0045</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0045</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0045</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0045</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0045check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0046</Bh>
+    <CaseName>开具最小行数清单9行普通单税率6%电子发票</CaseName>
+    <CaseId>51bs-2343</CaseId>
+    <Description>开具编号为DZV0046的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0046</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0046</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0046</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0046</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0046check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0047</Bh>
+    <CaseName>开具最小行数清单9行普通单税率11%电子发票</CaseName>
+    <CaseId>51bs-2343</CaseId>
+    <Description>开具编号为DZV0047的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0047</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0047</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0047</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0047</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0047check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0048</Bh>
+    <CaseName>开具最小行数清单9行普通单税率13%电子发票</CaseName>
+    <CaseId>51bs-2343</CaseId>
+    <Description>开具编号为DZV0048的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0048</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0048</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0048check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0049</Bh>
+    <CaseName>开具最小行数清单9行普通单税率17%电子发票</CaseName>
+    <CaseId>51bs-2343</CaseId>
+    <Description>开具编号为DZV0049的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0049</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0049</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0049</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0049</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0049check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0050</Bh>
+    <CaseName>开具最小行数清单9行普通单税率免税电子发票</CaseName>
+    <CaseId>51bs-2343</CaseId>
+    <Description>开具编号为DZV0050的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0050</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0050</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0050</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0050</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0050check</DataList>
+    </Step>
+  </TestCase>
+  
+    <TestCase>
+    <Bh>DZV0051</Bh>
+    <CaseName>开具最小行数清单9行普通单税率不征税电子发票</CaseName>
+    <CaseId>51bs-2343</CaseId>
+    <Description>开具编号为DZV0051的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0051</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0051</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0051</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0051</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0051check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0052</Bh>
+    <CaseName>开具最小行数清单9行多税率0税率与普通税率组合电子发票</CaseName>
+    <CaseId>51bs-2344</CaseId>
+    <Description>开具编号为DZV0052的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0052</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0052</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0052</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0052</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0052check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0053</Bh>
+    <CaseName>开具最小行数清单9行多税率免税与普通税率组合电子发票（免税，3%，5%）</CaseName>
+    <CaseId>51bs-2344</CaseId>
+    <Description>开具编号为DZV0053的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0053</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0053</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0053</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0053</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0053check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0054</Bh>
+    <CaseName>开具最小行数清单9行多税率不征税与普通税率组合电子发票</CaseName>
+    <CaseId>51bs-2344</CaseId>
+    <Description>开具编号为DZV0054的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0054</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0054</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0054</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0054</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0054check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0055</Bh>
+    <CaseName>开具最小行数清单9行多税率0税-免税-不征税与普通税率组合电子发票</CaseName>
+    <CaseId>51bs-2344</CaseId>
+    <Description>开具编号为DZV0055的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0055</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0055</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0055</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0055</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0055check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0056</Bh>
+    <CaseName>开具最大行数清单100行单税率0税率电子发票</CaseName>
+    <CaseId>51bs-2345</CaseId>
+    <Description>开具编号为DZV0056的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0056</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0056</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0056</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0056</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0056check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0057</Bh>
+    <CaseName>开具最大行数清单100行单税率3%税率电子发票</CaseName>
+    <CaseId>51bs-2345</CaseId>
+    <Description>开具编号为DZV0057的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0057</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0057</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0057</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0057</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0057check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0058</Bh>
+    <CaseName>开具最大行数清单100行单税率4%税率电子发票</CaseName>
+    <CaseId>51bs-2345</CaseId>
+    <Description>开具编号为DZV0058的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0058</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0058</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0058</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0058</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0058check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0059</Bh>
+    <CaseName>开具最大行数清单100行单税率5%税率电子发票</CaseName>
+    <CaseId>51bs-2345</CaseId>
+    <Description>开具编号为DZV0059的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0059</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0059</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0059</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0059</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0059check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0060</Bh>
+    <CaseName>开具最大行数清单100行单税率6%税率电子发票</CaseName>
+    <CaseId>51bs-2345</CaseId>
+    <Description>开具编号为DZV0060的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0060</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0060</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0060</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0060</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0060check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0061</Bh>
+    <CaseName>开具最大行数清单100行单税率11%税率电子发票</CaseName>
+    <CaseId>51bs-2345</CaseId>
+    <Description>开具编号为DZV0061的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0061</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0061</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0061</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0061</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0061check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0062</Bh>
+    <CaseName>开具最大行数清单100行单税率13%税率电子发票</CaseName>
+    <CaseId>51bs-2345</CaseId>
+    <Description>开具编号为DZV0062的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0062</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0062</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0062</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0062</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0062check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0063</Bh>
+    <CaseName>开具最大行数清单100行单税率17%税率电子发票</CaseName>
+    <CaseId>51bs-2345</CaseId>
+    <Description>开具编号为DZV0063的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0063</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0063</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0063</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0063</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0063check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0064</Bh>
+    <CaseName>开具最大行数清单100行单税率免税税率电子发票</CaseName>
+    <CaseId>51bs-2345</CaseId>
+    <Description>开具编号为DZV0064的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0064</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0064</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0064</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0064</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0064check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0065</Bh>
+    <CaseName>开具最大行数清单100行单税率不征税税率电子发票</CaseName>
+    <CaseId>51bs-2345</CaseId>
+    <Description>开具编号为DZV0065的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0065</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0065</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0065</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0065</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0065check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0066</Bh>
+    <CaseName>开具最大行数清单100行0税率与普通税率电子发票</CaseName>
+    <CaseId>51bs-2346</CaseId>
+    <Description>开具编号为DZV0066的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0066</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0066</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0066</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0066</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0066check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0067</Bh>
+    <CaseName>开具最大行数清单100行免税与普通税率电子发票(免税，3%，5%)</CaseName>
+    <CaseId>51bs-2346</CaseId>
+    <Description>开具编号为DZV0067的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0067</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0067</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0067</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0067</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0067check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0068</Bh>
+    <CaseName>开具最大行数清单100行不征税与普通税率电子发票</CaseName>
+    <CaseId>51bs-2346</CaseId>
+    <Description>开具编号为DZV0068的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0068</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0068</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0068</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0068</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0068check</DataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <Bh>DZV0069</Bh>
+    <CaseName>开具最大行数清单100行0税率，免税，不征税与普通税率电子发票</CaseName>
+    <CaseId>51bs-2346</CaseId>
+    <Description>开具编号为DZV0069的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0069</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0069</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0069</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD001check</DataList>
+      <TargetDataList>DZD0069</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZT0069check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0070</Bh>
+    <CaseName>开具超过最大行数清单101行0税率，免税，不征税与普通税率电子发票</CaseName>
+    <CaseId>51bs-2346</CaseId>
+    <Description>开具编号为DZV0070的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0070</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV001check</DataList>
+      <TargetDataList>DZV0070</TargetDataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0072</Bh>
+    <CaseName>接口暂不校验-填开商品编码为汇总项-填开失败-单行-3%税率-商品编码-1010101000000000000</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0072的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0072</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0072check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0072</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0072check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0073</Bh>
+    <CaseName>接口暂不校验-普通企业输入商品编码非汇总项，可用状态为不可用，开具失败-单行5%税率-商品编码-3010501000000000000</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0073的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0073</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0073check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0073</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0073check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0074</Bh>
+    <CaseName>接口暂不校验-分类编码6开头-税率为普通税率-填开失败-单行3%税率-商品编码-6080000000000000000</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0074的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0074</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0074check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0074</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0074check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0075</Bh>
+    <CaseName>验证普票分类编码6开头-税率为普通税率-填开失败-单行3%税率-商品编码-6010000000000000000-简称-预付卡销售</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0075的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0075</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0075check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0076</Bh>
+    <CaseName>接口暂不校验-验证普票分类编码6开头-税率为普通税率-填开失败-单行3%税率-商品编码-6100000000000000000-简称-有奖发票奖金</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0076的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0076</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0076check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0076</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0076check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0077</Bh>
+    <CaseName>接口暂不校验-分类编码6开头-税率为普通0税率-零税率标识为3-填开失败-单行0%税率-商品编码-6080000000000000000--简称-资产重组涉及的土地使用权</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0077的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0077</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0077check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0077</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0077check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0078</Bh>
+    <CaseName>分类编码6开头-税率为普通0税率-零税率标识为3-填开失败-单行0%税率-商品编码-6010000000000000000-简称-预付卡销售</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0078的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0078</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0078check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0079</Bh>
+    <CaseName>接口暂不校验-普票分类编码6开头-税率为普通0税率-零税率标识为3-填开失败-单行0%税率-商品编码-6100000000000000000-简称-有奖发票奖金</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0079的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0079</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0079check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0079</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0079check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0080</Bh>
+    <CaseName>接口暂不校验-分类编码6开头-税率为免税-零税率标识为1-填开失败-单行免税-商品编码-6080000000000000000--简称-资产重组涉及的土地使用权</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0080的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0080</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0080check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0080</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0080check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0081</Bh>
+    <CaseName>分类编码6开头-税率为免税-零税率标识为1-填开失败-单行免税-商品编码-6010000000000000000-简称-预付卡销售</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0081的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0081</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0081check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0082</Bh>
+    <CaseName>接口暂不校验-普票分类编码6开头-税率为免税-零税率标识为1-填开失败-单行免税-商品编码-6100000000000000000-简称-有奖发票奖金</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0081的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0082</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0082check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0082</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0082check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0083</Bh>
+    <CaseName>接口暂不校验-分类编码6开头-税率为不征税-零税率标识为2-填开失败-单行不征税-商品编码-6080000000000000000--简称-资产重组涉及的土地使用权</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0083的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0083</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0083check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0083</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0083check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0084</Bh>
+    <CaseName>分类编码6开头-税率为不征税-零税率标识为2-填开失败-单行不征税-商品编码-6010000000000000000-简称-预付卡销售</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0084的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0084</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0084check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0084</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0084check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0085</Bh>
+    <CaseName>接口暂不校验-普票分类编码6开头-税率为不征税-零税率标识为2-填开失败-单行不征税-商品编码-6100000000000000000-简称-有奖发票奖金</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0085的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0085</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0085check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0085</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0085check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0086</Bh>
+    <CaseName>非电信纳税人-开具电信服务汇总项-开具失败-单行3%税率-商品编码-3030100000000000000-简称-电信服务</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0086的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0086</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0086check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0086</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0086check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0087</Bh>
+    <CaseName>非电信纳税人-开具电信服务非汇总项-开具成功-单行3%税率-商品编码-3030101000000000000简称-语音通话服务</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0087的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0087</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0087check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0087</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0087check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>DZV0088</Bh>
+    <CaseName>发票填开-单价2.99-税率4%-填开成功</CaseName>
+    <CaseId>51bs-2348</CaseId>
+    <Description>开具编号为DZV0088的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZV0088</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZV0088check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZD0088</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>查看详情</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZD0088check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+
+
+
+
+</Data>

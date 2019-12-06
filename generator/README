@@ -1,0 +1,74 @@
+通用生成自动化测试脚本generateSingleCase
+1.封装单个字段测试的用例的输入值；
+2.根据excel表中的key--value，生成多个字段相互关系的测试用例值；
+3.将生成的字段值与模板中值替换，生成测试用例报文；
+4.将报文写入到测试用例数据库中（mysql）；
+5.考虑到用例可能较多，将excel格式改为xlsx
+
+v 1.0
+
+    1.封装单个字段测试的用例的输入值；
+        1.1 原计划在excel case中录入每个字段的检查类型及长度，再根据下表生成相应的值，感觉太麻烦。
+        """
+        {"小写字母":"ZMX",
+        "大写字母":"ZMD",
+        "数字":"SZ",
+        "汉字":"HZ",
+        "特殊符号":"FH",
+        "空":"K",
+        "空字符":"KZF",
+        "难体字":"NT",
+        "繁体字":"FT",
+        "全角数字":"QJSZ",
+        "小数":"XS",
+        "日期":"RQ",
+        "日期错误月":"RQM",
+        "日期错误年":"RQY",
+        "日期错误日":"RQD",
+        "日期错误日":"RQD",
+        "null":"null",
+        }
+        """
+        1.2分析各字段的类型，全部的数据字段在数据库中只有6种类型：
+       """
+       "VARCHAR"
+       "DATETIME"
+       "CHAR"
+       "DOUBLE"
+       "INT"
+       """
+
+
+    2. 各文件作用：
+        2.1 randomCount:
+            random_count(sort,length)生成sort-->['SZ','HZ',...]各类型字符的长度，总长度等于length；
+            返回{'SZ':10,'HZ':5,...}
+        2.2 randomString:
+            GetString类实现加载不同数据类型（数字、汉字、繁体字等），并根据2.1中返回的字典，生成对应位数的字符串
+            __init__：初始化的时候加载数字、汉字、繁体字等数据字库；
+            random_string_multiple(self,sort,length):根据sort-->['SZ','HZ',...]、length生成相应长度的数据类型，
+            此函数先调用2.1中的random_count，并根据其返回值生成相应数据类型的字符串
+        2.3 operateMysqlClass:
+            向数据库中写入脚本
+            SQL_TEMPLATE = {
+                "case_id":case_id
+                "step":step
+                "test_desc":test_desc
+                "step_reference":step_reference
+                "http_method":http_method
+                "headers":headers
+                "url_sql":url_sql
+                "request_sql_param":request_sql_param
+                "out_put":out_put
+                "request_name":request_name
+                "aoto_replace":aoto_replace
+                "expected_modify":expected_modify
+                "expected_result":expected_result
+                "expected_result_b":expected_result_b
+            }
+        2.4
+
+v1.2 变动内容
+
+    1.单个用例excel表格中，length可以输入 20，2，程序会解析20为总长度、2为小数位置；
+    2.

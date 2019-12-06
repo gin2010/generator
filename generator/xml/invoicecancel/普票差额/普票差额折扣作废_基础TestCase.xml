@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="GBK"?>
+	<Data>
+		<TestCase>
+			<Bh>PPFZKKCE001</Bh>
+			<CaseName>不含税金额100，扣除额50，税率3%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE001的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE001</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE001</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE001</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE001</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE001</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE001</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE002</Bh>
+			<CaseName>含税金额100，扣除额50，税率3%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE003的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE003</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE003</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE003</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE003</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE003</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE003</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE003</Bh>
+			<CaseName>不含税金额100，扣除额50，税率5%，折扣率60%，折扣金额60,商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE005的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE005</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE005</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE005</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE005</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE005</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE005</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE004</Bh>
+			<CaseName>含税金额100，扣除额50，税率5%，折扣率60%，折扣金额60,商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE007的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE004</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE007</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE007</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE007</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE007</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE007</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE005</Bh>
+			<CaseName>不含税金额100，扣除额50，税率6%，折扣率60%，折扣金额60,商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE009的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE009</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE009</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE009</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE009</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE009</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE009</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE006</Bh>
+			<CaseName>含税金额100，扣除额50，税率6%，折扣率60%，折扣金额60,商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE011的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE011</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE011</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE006</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE011</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE011</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE011</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE007</Bh>
+			<CaseName>不含税金额100，扣除额50，税率10%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE013的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE013</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE013</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE013</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE013</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE013</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE013</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE008</Bh>
+			<CaseName>含税金额100，扣除额50，税率10%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE015的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE015</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE015</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE015</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE015</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE015</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE015</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE009</Bh>
+			<CaseName>不含税金额100，扣除额50，税率11%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE017的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE017</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE017</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE017</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE017</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE017</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE017</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE010</Bh>
+			<CaseName>含税金额100，扣除额50，税率11%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE019的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE019</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE019</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE019</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE019</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE019</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE019</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE011</Bh>
+			<CaseName>不含税金额100，扣除额50，税率13%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE021的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE021</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE021</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE021</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE021</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE021</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE021</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE012</Bh>
+			<CaseName>含税金额100，扣除额50，税率13%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE023的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE023</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE023</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE023</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE023</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE023</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE023</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE013</Bh>
+			<CaseName>不含税金额100，扣除额50，税率17%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE025的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE025</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE025</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE025</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE025</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE025</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE025</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE014</Bh>
+			<CaseName>含税金额100，扣除额50，税率17%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE027的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE027</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE027</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE027</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE027</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE027</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE027</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE015</Bh>
+			<CaseName>不含税金额100，扣除额50，税率0%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE029的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE029</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE029</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE029</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE029</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE029</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE029</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE016</Bh>
+			<CaseName>含税金额100，扣除额50，税率0%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE031的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE031</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE031</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE031</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE031</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE031</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE031</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE017</Bh>
+			<CaseName>不含税金额100，扣除额50，不征税，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE033的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE033</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE033</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE033</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE033</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE033</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE033</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE018</Bh>
+			<CaseName>含税金额100，扣除额50，不征税，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE035的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE035</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE035</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE018</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE035</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE035</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE035</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE019</Bh>
+			<CaseName>不含税金额100，扣除额50，免税，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE037的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE037</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE037</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE037</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKC037</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE037</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE037</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE020</Bh>
+			<CaseName>含税金额100，扣除额50，免税，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE037的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE020</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE037</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE037</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE037</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE037</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE037</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE021</Bh>
+			<CaseName>不含税金额100，扣除额200，税率3%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE041的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE041</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE041</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE041</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE041</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE041</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE041</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE022</Bh>
+			<CaseName>不含税金额100，扣除额200，税率5%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE043的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE043</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE043</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE043</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE043</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE043</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE043</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE023</Bh>
+			<CaseName>不含税金额100，扣除额200，税率6%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE045的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE045</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE045</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE045</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE045</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE045</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE045</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE024</Bh>
+			<CaseName>不含税金额100，扣除额200，税率10%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE047的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE047</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE047</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE047</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE047</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE047</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE047</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE025</Bh>
+			<CaseName>不含税金额100，扣除额200，税率11%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE049的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE049</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE049</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE049</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE049</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE049</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE049</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE026</Bh>
+			<CaseName>不含税金额100，扣除额200，税率13%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE051的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE051</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE051</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE051</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE051</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE051</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE051</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE027</Bh>
+			<CaseName>不含税金额100，扣除额200，税率17%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE053的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE053</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE053</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE053</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE053</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE053</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE053</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE028</Bh>
+			<CaseName>不含税金额100，扣除额200，税率0%，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE055的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE055</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE055</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE055</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE055</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE055</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE055</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE029</Bh>
+			<CaseName>不含税金额100，扣除额200，不征税，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE057的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE057</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE057</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE057</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE057</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE057</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE057</TargetDataList>
+			</Step>
+		</TestCase>
+		<TestCase>
+			<Bh>PPFZKKCE030</Bh>
+			<CaseName>不含税金额100，扣除额200，免税，折扣率60%，折扣金额60，商品税额大于折扣税额，开具成功</CaseName>
+			<CaseId>51bs-9002</CaseId>
+			<Description>作废PPVZKKCE059的发票</Description>
+			<Step id="1">
+				<Name>发票开具</Name>
+				<Keyword>IISSUE</Keyword>
+				<DataList>PPVZKKCE059</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="2">
+				<Name>发票查询</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE059</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="3">
+				<Name>作废发票</Name>
+				<Keyword>IWASTE</Keyword>
+				<DataList>PPVZKKCE059</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="4">
+				<Name>作废检查</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPFZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE059</TargetDataList>
+			</Step>
+			<Step id="5">
+				<Name>查看详情</Name>
+				<Keyword>IDETAIL</Keyword>
+				<DataList>PPVZKKCE059</DataList>
+				<TargetProject>CLOUD</TargetProject>
+			</Step>
+			<Step id="6">
+				<Name>作废标志</Name>
+				<Keyword>CHECK</Keyword>
+				<DataList>PPMZKKCEcheck</DataList>
+				<TargetProject>CLOUD</TargetProject>
+				<TargetDataList>PPVZKKCE059</TargetDataList>
+			</Step>
+		</TestCase>
+	</Data>

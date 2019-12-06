@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="GBK" ?>
+<Data>
+ 
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCJE001</Bh>
+    <CaseName>电子票-单价数量为空，金额不为空，不含税，提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCJE001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCJE001</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCJE001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCJE001</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZVCJE001check</DataList>
+	   <TargetDataList>DZVCJE001</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCJE002</Bh>
+    <CaseName>电子票-单价数量为空，金额不为空，含税，提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCJE002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCJE002</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCJE002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCJE002</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZVCJE002check</DataList>
+	   <TargetDataList>DZVCJE002</TargetDataList>
+    </Step>
+  </TestCase>
+  
+   <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCJE003</Bh>
+    <CaseName>电子票-单价数量为空，金额不为空，折扣票，含税，提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCJE003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCJE003</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCJE003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCJE003</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZVCJE003check</DataList>
+	   <TargetDataList>DZVCJE003</TargetDataList>
+    </Step>
+  </TestCase>
+    <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCJE004</Bh>
+    <CaseName>电子票-单价数量为空，金额不为空，差额票提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCJE004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCJE004</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCJE004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCJE004</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZVCJE004check</DataList>
+	   <TargetDataList>DZVCJE004</TargetDataList>
+    </Step>
+  </TestCase>
+  
+   <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCJE005</Bh>
+    <CaseName>电子票-单价数量为空，金额不为空，差额折扣票提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCJE005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCJE005</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCJE005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCJE005</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZVCJE005check</DataList>
+	   <TargetDataList>DZVCJE005</TargetDataList>
+    </Step>
+  </TestCase>
+
+</Data>

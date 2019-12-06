@@ -1,0 +1,10 @@
+{
+	"zipCode": "0",
+	"encryptCode": "2",
+	"access_token": "@@token",
+	"datagram": {
+		"fjh": "0",
+		"bm": "10145",
+		"certpwd": "12345678"
+	}
+}

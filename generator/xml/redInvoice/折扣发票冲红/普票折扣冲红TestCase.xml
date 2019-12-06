@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="GBK" ?>
+<Data>
+ 
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK001</Bh>
+    <CaseName>验证普票-单行明细-5税率-不含税-折扣金额10，发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK001</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK001</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK001check</DataList>
+	   <TargetDataList>PPVCZK001</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK002</Bh>
+    <CaseName>验证普票-单行明细-不征税-6开头-不含税-折扣金额 10，发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK002</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK002</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK002check</DataList>
+	   <TargetDataList>PPVCZK002</TargetDataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK003</Bh>
+    <CaseName>验证普票-多行明细多税率-普通税率-3行-6%-10%-16%-不含税-中间一行折扣，折扣金额10，发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK003</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK003</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK003check</DataList>
+	   <TargetDataList>PPVCZK003</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK004</Bh>
+    <CaseName>验证普票-多行明细多税率-普通税率-3行-3%-5%-5%-不含税-三行折扣，第一行折扣10，第二行折扣10，第三行折扣10，发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK004</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK004</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK004check</DataList>
+	   <TargetDataList>PPVCZK004</TargetDataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK005</Bh>
+    <CaseName>验证填开-普票-加折扣最小清单-多税率-普通8行-普通税率10%-6%-16%-17%-6%-13%-17%-11%不含税-第一行折扣，折扣金额10-红票非折扣</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK005</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK005</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK005check</DataList>
+	   <TargetDataList>PPVCZK005</TargetDataList>
+    </Step>
+  </TestCase>
+ 
+  
+   <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK006</Bh>
+    <CaseName>验证普票-最小行数清单-清单行数10行-单税率-9行-5税率-不含税-最后一行折扣，折扣金额10-红票折扣</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK006</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK006</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK006check</DataList>
+	   <TargetDataList>PPVCZK006</TargetDataList>
+    </Step>
+  </TestCase>
+
+  
+    <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK007</Bh>
+    <CaseName>验证普票，折扣金额0.01，单行折扣，税率3%，发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK007</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK007</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK007check</DataList>
+	   <TargetDataList>PPVCZK007</TargetDataList>
+    </Step>
+  </TestCase>
+  
+   <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK008</Bh>
+    <CaseName>验证普票，折扣金额99.99，单行折扣，税率3%，发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK008</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK008</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK008check</DataList>
+	   <TargetDataList>PPVCZK008</TargetDataList>
+    </Step>
+  </TestCase>
+
+<TestCase>
+    <!--特殊冲红-->
+    <Bh>PPVCZK009</Bh>
+    <CaseName>特殊冲红-添加折扣，冲红失败--接口不验证</CaseName>
+    <CaseId>51bs-2401</CaseId>
+    <Description>冲红编号为PPC001的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPVCZKfailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK009</TargetDataList>
+    </Step> 
+  </TestCase>
+  
+   <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK010</Bh>
+    <CaseName>验证普票票-最大行数清单总行数100-多税率-99行-普通税率组合(3%,4%,5%,6%,10%、11%,13%,16%、17%)不含税，第一行折扣10</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK010</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK010</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK010check</DataList>
+	   <TargetDataList>PPVCZK010</TargetDataList>
+    </Step>
+  </TestCase>
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK011</Bh>
+    <CaseName>验证普票票-最大行数清单总行数100-多税率-99行-普通税率组合(3%,4%,5%,6%,10%、11%,13%,16%、17%)含税，第一行折扣10</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK011</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK011</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK011check</DataList>
+	   <TargetDataList>PPVCZK011</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK012</Bh>
+    <CaseName>验证普票票-多行明细多税率-普通税率-3行-6%-10%-16%-含税-最后一行折扣，折扣金额10，发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK012</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK012</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK012</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK012</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK012check</DataList>
+	   <TargetDataList>PPVCZK012</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK013</Bh>
+    <CaseName>验证普票-最小行数清单-清单行数10行-单税率-9行-5税率-含税-最后一行折扣，折扣金额10-红票折扣</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK013</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK013</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK013</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK013</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK013check</DataList>
+	   <TargetDataList>PPVCZK013</TargetDataList>
+    </Step>
+  </TestCase>
+  
+   <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK014</Bh>
+    <CaseName>验证填开-普票-加折扣最小清单-多税率-普通8行-普通税率5%-3%不含税-第一行折扣，折扣金额10-红票非折扣</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK014</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK014</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK014</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK014</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK014check</DataList>
+	   <TargetDataList>PPVCZK014</TargetDataList>
+    </Step>
+  </TestCase>
+  
+   <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCZK015</Bh>
+    <CaseName>验证填开-普票-加折扣100行清单-多税率-普通8行-普通税率5%-3%不含税-第一行折扣，折扣金额10-红票非折扣</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCZK015</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK015</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCZK015</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCZK015</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPCZK015check</DataList>
+	   <TargetDataList>PPVCZK015</TargetDataList>
+    </Step>
+  </TestCase>
+
+</Data>

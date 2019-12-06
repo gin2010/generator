@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="GBK" ?>
+<Data>
+ 
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCJE001</Bh>
+    <CaseName>普票-单价数量为空，金额不为空，不含税，提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCJE001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCJE001</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCJE001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCJE001</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPVCJE001check</DataList>
+	   <TargetDataList>PPVCJE001</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCJE002</Bh>
+    <CaseName>普发票-单价数量为空，金额不为空，含税，提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCJE002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCJE002</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCJE002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCJE002</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPVCJE002check</DataList>
+	   <TargetDataList>PPVCJE002</TargetDataList>
+    </Step>
+  </TestCase>
+  
+   <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCJE003</Bh>
+    <CaseName>普发票-单价数量为空，金额不为空，折扣票，含税，提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCJE003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCJE003</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCJE003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCJE003</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPVCJE003check</DataList>
+	   <TargetDataList>PPVCJE003</TargetDataList>
+    </Step>
+  </TestCase>
+    <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCJE004</Bh>
+    <CaseName>普发票-单价数量为空，金额不为空，差额票提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCJE004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCJE004</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCJE004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCJE004</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPVCJE004check</DataList>
+	   <TargetDataList>PPVCJE004</TargetDataList>
+    </Step>
+  </TestCase>
+  
+   <TestCase>
+    <!--全部冲红-->
+    <Bh>PPVCJE005</Bh>
+    <CaseName>普发票-单价数量为空，金额不为空，差额折扣票提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为PPC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPVCJE005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCJE005</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPVCJE005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPVCJE005</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>PPVCJE005check</DataList>
+	   <TargetDataList>PPVCJE005</TargetDataList>
+    </Step>
+  </TestCase>
+
+</Data>

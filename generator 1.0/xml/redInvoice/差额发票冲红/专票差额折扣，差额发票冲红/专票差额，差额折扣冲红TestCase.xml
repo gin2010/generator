@@ -1,0 +1,1804 @@
+<?xml version="1.0" encoding="GBK" ?>
+<Data>
+ 
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE001</Bh>
+    <CaseName>专票-单价数量为空，金额不为空，不含税，提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE001的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF070</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ070Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC070</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX070</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX070CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC070</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC070</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH070</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH070</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG070check</DataList>
+    </Step>
+  </TestCase>
+ 
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE002</Bh>
+    <CaseName>不含税金额100，扣除额50，税率3%，折扣率96%，折扣金额96，商品税额小于折扣税额时，折扣税额设置为商品税额最大值</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE002的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF071</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ071Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC071</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX071</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX071CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC071</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC071</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH071</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH071</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG071check</DataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE003</Bh>
+    <CaseName>含税金额100，扣除额50，税率3%，折扣率60%，折扣金额60，商品税额大于折扣税额</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE003的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF072</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ072Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC072</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX072</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX072CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC072</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC072</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH072</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH072</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG072check</DataList>
+    </Step>
+  </TestCase>  
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE004</Bh>
+    <CaseName>含税金额100，扣除额50，税率3%，折扣率96%，折扣金额96，商品税额小于折扣税额，折扣税额设置为商品税额最大值</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE004的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF073</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ073Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC072</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX073</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX073CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC073</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC073</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH073</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH073</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG073check</DataList>
+    </Step>
+  </TestCase>    
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE005</Bh>
+    <CaseName>不含税金额100，扣除额50，税率5%，折扣率60%，折扣金额60,商品税额大于折扣税额</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE005的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF074</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ074Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC074</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX074</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX074CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC074</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC074</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH074</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH074</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG074check</DataList>
+    </Step>
+  </TestCase>    
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE004</Bh>
+    <CaseName>专票-单价数量为空，金额不为空，不含税，提交成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE004的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF073</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ073Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC072</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX073</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX073CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC073</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC073</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH073</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH073</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG073check</DataList>
+    </Step>
+  </TestCase>    
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE006</Bh>
+    <CaseName>不含税金额100，扣除额50，税率5%，折扣率96%，折扣金额96,商品税额小于折扣税额，折扣税额设置为商品税额最大值</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE006的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF075</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ075Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC075</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX075</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX075CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC075</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC075</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH075</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH075</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG075check</DataList>
+    </Step>
+  </TestCase>  
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE007</Bh>
+    <CaseName>含税金额100，扣除额50，税率5%，折扣率60%，折扣金额60,商品税额大于折扣税额，开具成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE007的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF076</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ076Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC076</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX076</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX076CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC076</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC076</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH076</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH076</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG076check</DataList>
+    </Step>
+  </TestCase> 
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE008</Bh>
+    <CaseName>含税金额100，扣除额50，税率5%，折扣率96%，折扣金额96,商品税额小于折扣税额，折扣税额设置为商品税额最大值</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE008的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF077</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ077Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC077</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX077</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX077CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC077</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC077</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH077</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH077</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG077check</DataList>
+    </Step>
+  </TestCase>  
+  
+ 
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE009</Bh>
+    <CaseName>含税金额100，扣除额50，税率5%，折扣率96%，折扣金额96,商品税额小于折扣税额，折扣税额设置为商品税额最大值</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE029的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE029</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE029</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF078</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ078Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC078</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX078</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX078CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC078</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC078</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH078</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH078</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG078check</DataList>
+    </Step>
+  </TestCase> 
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE010</Bh>
+    <CaseName>含税金额100，扣除额200，税率3%，折扣率60%，折扣金额60，商品税额大于折扣税额</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE030的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF079</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ079Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC079</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX079</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX079CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC079</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC079</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH079</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH079</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG079check</DataList>
+    </Step>
+  </TestCase> 
+
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE011</Bh>
+    <CaseName>不含税金额100，扣除额200，税率5%，折扣率60%，折扣金额60，商品税额大于折扣税额</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE031的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF080</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ080Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC080</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX080</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX080CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC080</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC080</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH080</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH080</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG080check</DataList>
+    </Step>
+  </TestCase> 
+
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE012</Bh>
+    <CaseName>含税金额100，扣除额200，税率5%，折扣率60%，折扣金额60，商品税额大于折扣税额</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKKCE032的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKKCE032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKKCE032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF081</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ081Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC081</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX081</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX081CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC081</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC081</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH081</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH081</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG081check</DataList>
+    </Step>
+  </TestCase> 
+
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE013</Bh>
+    <CaseName>验证专票-单行明细-3税率-不含税-折扣金额10</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZK001的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZK001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZK001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF082</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ082Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC082</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX082</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX082CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC082</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC082</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH082</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH082</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG082check</DataList>
+    </Step>
+  </TestCase> 
+
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE014</Bh>
+    <CaseName>验证专票-单行明细-5税率-不含税-折扣金额 10</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZK003的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZK003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZK003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF083</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ083Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC083</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX083</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX083CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC083</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC083</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH083</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH083</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG083check</DataList>
+    </Step>
+  </TestCase> 
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE015</Bh>
+    <CaseName>验证专票-单行明细-5税率-含税-折扣金额 10</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKHS003的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKHS003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKHS003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF084</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ084Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC084</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX084</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX084CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC084</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC084</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH084</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH084</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG084check</DataList>
+    </Step>
+  </TestCase> 
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE016</Bh>
+    <CaseName>验证专票，折扣金额0.01，单行折扣，税率3%</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZK029的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZK029</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZK029</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF085</DataList>
+	</Step> 
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ085Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC085</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX085</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX085CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC085</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC085</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH085</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH085</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG085check</DataList>
+    </Step>
+  </TestCase> 
+
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE017</Bh>
+    <CaseName>验证专票，折扣金额99.99，单行折扣，税率3%</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZK030的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZK030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZK030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF086</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ086Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC086</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX086</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX086CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC086</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC086</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH086</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH086</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG086check</DataList>
+    </Step>
+  </TestCase> 
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE018</Bh>
+    <CaseName>验证专票-最大行数清单总行数100-单税率-99行-普通税率组合(3%)含税，最后一行折扣10</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKHS026的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKHS026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKHS026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF087</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ087Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC087</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX087</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX087CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC087</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC087</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH087</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH087</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG087check</DataList>
+    </Step>
+  </TestCase> 
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>ZPVCZKKCE019</Bh>
+    <CaseName>验证专票-最大行数清单总行数100-多税率-99行-普通税率组合(3%,4%,5%,6%,10%、11%,13%,16%、17%)含税，第一行折扣10</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为ZPVZKHS025的发票</Description>
+	<Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPVZKHS025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPVZKHS025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF088</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ088Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC088</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX088</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX088CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC088</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+	   <Keyword>CHECK</Keyword>
+	  <DataList>PPCZKcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPC088</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH088</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCZKDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPH088</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG088check</DataList>
+    </Step>
+  </TestCase> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+</Data>

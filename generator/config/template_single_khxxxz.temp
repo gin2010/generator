@@ -1,0 +1,25 @@
+{
+	"zipCode": "0",
+	"encryptCode": "2",
+	"access_token": "@@token",
+	"datagram": {
+		"fjh": "0",
+		"bm": "20001",
+		"ghfmc": "大数据",
+		"jm": "ZX4",
+		"sjbm": "10",
+		"kjm": "zx4",
+		"ghf_nsrsbh": "91370200863607414Y",
+		"ghf_dzdh": "北京市东大街10号路 010-66666666",
+		"ghf_yhzh": "青岛银行 000-12345678",
+		"ghf_yjdz": "123456@gong.com",
+		"bz": "备注11",
+		"yskm": "271010001",
+		"dqbm": "1101000000",
+		"dqmc": "北京市",
+		"dqkm": "100101",
+		"jd": "1",
+		"sfzjy": "0",
+		"certpwd": "12345678"
+	}
+}

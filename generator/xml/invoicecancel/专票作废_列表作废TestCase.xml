@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="GBK" ?>
+<Data>
+  
+  <TestCase>
+    <Bh>ZPZFLIST002</Bh>
+    <CaseName>蓝票单行普通税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPV005的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPV005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+	   <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPV005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPV005</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	  <TargetDataList>ZPV005</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>ZPZFLIST005</Bh>
+    <CaseName>蓝票3行普通税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPV016的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPV016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPV016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	  <TargetDataList>ZPV016</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	  <TargetDataList>ZPV016</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>ZPZFLIST009</Bh>
+    <CaseName>蓝票多行不同普通税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPV023的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPV023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPV023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	  <TargetDataList>ZPV023</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	  <TargetDataList>ZPV023</TargetDataList>
+    </Step>
+  </TestCase>
+	
+  <TestCase>
+    <Bh>ZPZFLIST014</Bh>
+    <CaseName>蓝票8行普通单税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPV026的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPV026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPV026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPV026</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPV026</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>ZPZFLIST018</Bh>
+    <CaseName>蓝票8行不同普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPV030的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPV030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPV030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPV030</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPV030</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>ZPZFLIST023</Bh>
+    <CaseName>红票单行0税率作废-测试失败</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPZFLIST023的发票</Description>
+    <Step id = "1">
+      <Name>开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPZFLIST023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLIST023check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFCXLIST023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPZFLIST023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPZFLIST023</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFLIST023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPZFLIST023</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>ZPZFLIST027</Bh>
+    <CaseName>红票多行普通单税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPZFLIST027的发票</Description>
+    <Step id = "1">
+      <Name>开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPZFLIST027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLIST027check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFCXLIST027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPZFLIST027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPZFLIST027</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFLIST027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPZFLIST027</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>ZPZFLIST031</Bh>
+    <CaseName>验证红票多行不同普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPZFLIST031的发票</Description>
+    <Step id = "1">
+      <Name>开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPZFLIST031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLIST031check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFCXLIST031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPZFLIST031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name> 
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPZFLIST031</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFLIST031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPZFLIST031</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>ZPZFLIST036</Bh>
+    <CaseName>红票最大8行普通单税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPZFLIST036的发票</Description>
+    <Step id = "1">
+      <Name>开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPZFLIST036</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLIST036check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFCXLIST036</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPZFLIST036</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPZFLIST036</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFLIST036</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPZFLIST036</TargetDataList>
+    </Step>
+  </TestCase>
+ 
+  
+   <TestCase>
+    <Bh>ZPZFLIST040</Bh>
+    <CaseName>红票最大8行不同普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPZFLIST040的发票</Description>
+    <Step id = "1">
+      <Name>开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPZFLIST040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLIST040check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFCXLIST040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPZFLIST040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPZFLIST040</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFLIST040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	 <TargetDataList>ZPZFLIST040</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>ZPZFLIST047</Bh>
+    <CaseName>作废已作废蓝票</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPV002的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPV002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "2">
+      <Name>查询发票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票作废</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPZFLIST047</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询废票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPZFLIST047</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>再次作废</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPZFLIST047</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPZFLIST047check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>ZPZFLIST048</Bh>
+	 <CaseName>红票作废后作废蓝票</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为ZPV001的发票</Description>
+	    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPV004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPV004check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPD004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+		<Name>红字发票信息表填开</Name>
+		<Keyword>RISSUE</Keyword>
+		<TargetProject>CLOUD</TargetProject>
+		<DataList>XXBXF004</DataList>
+	</Step>
+
+    <Step id = "5">
+      <Name>是否填开成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>XXBKJ004Check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+  
+<Step id = "6">
+  <Name>红字发票信息表上传</Name>
+  <Keyword>RUPLOAD</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBSC004</DataList>
+</Step>
+<Step id = "7">
+  <Name>红字发票信息表查询</Name>
+  <Keyword>RQUERY</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX004</DataList>
+</Step>
+<Step id = "8">
+  <Name>红字发票信息表查询结果检查</Name>
+  <Keyword>CHECK</Keyword>
+  <TargetProject>CLOUD</TargetProject>
+  <DataList>XXBCX004CHECK</DataList>
+</Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>ZPC004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPC004check</DataList>
+      <TargetDataList>ZPC004</TargetDataList>
+    </Step>
+    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPH004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPH004check</DataList>
+      <TargetDataList>ZPH004</TargetDataList>
+    </Step>
+    <Step id = "13">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPG004check</DataList>
+    </Step>
+	 <Step id = "5">
+      <Name>作废红票</Name>
+      <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPM048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>  
+    <Step id = "6">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPM048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	
+	<Step id = "7">
+      <Name>作废蓝票</Name>
+     <Keyword>IWASTE</Keyword>
+	  <SubKeyword>LIST</SubKeyword>
+      <DataList>ZPF048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPFcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPF048</TargetDataList>
+    </Step>
+	<Step id = "9">
+      <Name>查询蓝票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>ZPV004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "10">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPMcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>ZPV004</TargetDataList>
+    </Step>
+  </TestCase>
+</Data>

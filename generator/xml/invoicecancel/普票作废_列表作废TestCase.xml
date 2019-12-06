@@ -1,0 +1,2467 @@
+<?xml version="1.0" encoding="GBK" ?>
+<Data>
+  <TestCase>
+    <Bh>PPZFLIST001</Bh>
+    <CaseName>普票蓝票单行0税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV001的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST001</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST001</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST002</Bh>
+    <CaseName>普票蓝票单行普通税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV005的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST002</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST002</TargetDataList>
+    </Step>
+  </TestCase>
+ 
+  <TestCase>
+    <Bh>PPZFLIST003</Bh>
+    <CaseName>普票蓝票单行免税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV009的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST003</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST003</TargetDataList>
+    </Step>
+  </TestCase> 
+  
+  <TestCase>
+    <Bh>PPZFLIST004</Bh>
+    <CaseName>普票蓝票单行不征税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV010的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST004</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST004</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST005</Bh>
+    <CaseName>普票蓝票3行普通税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV016的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST005</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST005</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST006</Bh>
+    <CaseName>普票蓝票3行0税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV011的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST006</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST006</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST007</Bh>
+    <CaseName>普票蓝票3行免税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV019的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST007</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST007</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST008</Bh>
+    <CaseName>普票蓝票3行不征税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV020的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST008</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST008</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST009</Bh>
+    <CaseName>普票蓝票多行不同普通税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV023的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST009</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST009</TargetDataList>
+    </Step>
+  </TestCase>
+	
+  <TestCase>
+    <Bh>PPZFLIST010</Bh>
+    <CaseName>普票蓝票多行0税率和普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV022的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST010</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST010</TargetDataList>
+    </Step>
+  </TestCase>
+	
+  <TestCase>
+    <Bh>PPZFLIST011</Bh>
+    <CaseName>普票蓝票多行免税和普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV037的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV037</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV037</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST011</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST011</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST012</Bh>
+    <CaseName>普票蓝票3行不征税和普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV038的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV038</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV038</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST012</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST012</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST012</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST012</TargetDataList>
+    </Step>
+  </TestCase>
+	
+  <TestCase>
+    <Bh>PPZFLIST013</Bh>
+    <CaseName>普票蓝票3行0税率、免税和不征税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV096的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV096</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV096</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST013</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST013</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST013</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST013</TargetDataList>
+    </Step>
+  </TestCase>
+	
+  <TestCase>
+    <Bh>PPZFLIST014</Bh>
+    <CaseName>普票蓝票8行普通单税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV026的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST014</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST014</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST014</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST014</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST015</Bh>
+    <CaseName>普票蓝票8行0税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV025的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST015</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST015</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST015</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST015</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST016</Bh>
+    <CaseName>普票蓝票8行免税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV027的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST016</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST016</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST017</Bh>
+    <CaseName>普票蓝票8行不征税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV028的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST017</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST017</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST017</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST017</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST018</Bh>
+    <CaseName>普票蓝票8行不同普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV030的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST018</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST018</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST018</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST018</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST019</Bh>
+    <CaseName>普票蓝票8行0税率和普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV032的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST019</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST019</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST020</Bh>
+    <CaseName>普票蓝票8行免税和普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV034的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST020</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST020</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST021</Bh>
+    <CaseName>普票蓝票8行不征税和普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV035的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST021</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST021</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST021</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST021</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST022</Bh>
+    <CaseName>普票蓝票8行免税、不征税和普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV097的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV097</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV097</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST022</TargetDataList>
+    </Step>
+	<Step id = "5">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "6">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST022</TargetDataList>
+    </Step>
+  </TestCase>
+	
+  <TestCase>
+    <Bh>PPZFLIST023</Bh>
+    <CaseName>普票红票单行0税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST023的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST023</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST023</TargetDataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPZFLIST024</Bh>
+    <CaseName>普票红票单行普通税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST024的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST024</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST024</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST024</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST024</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST024</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST024</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST025</Bh>
+    <CaseName>普票红票单行免税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST025的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST025</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST025</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST026</Bh>
+    <CaseName>普票红票单行不征税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST026的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST026</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST026</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST027</Bh>
+    <CaseName>普票红票多行普通单税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST027的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST027</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST027</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST028</Bh>
+    <CaseName>普票红票多行普通0税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST028的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST028</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST028</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST029</Bh>
+    <CaseName>普票红票多行普通免税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST029的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST029</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST029</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST029</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST029</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST029</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST029</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST030</Bh>
+    <CaseName>普票红票多行普通不征税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST030的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST030</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST030</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST031</Bh>
+    <CaseName>验证普票红票多行不同普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST031的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST031</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST031</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST031</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST032</Bh>
+    <CaseName>验证普票红票多行普通税率和0税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST032的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST032</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST032</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST033</Bh>
+    <CaseName>普票红票多行普通税率和免税组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST033的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV037</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV037</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST033</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST033</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST033</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST033</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST033</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST033</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST034</Bh>
+    <CaseName>普票红票多行普通税率和不征税组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST034的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV038</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV038</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST034</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST034</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST035</Bh>
+    <CaseName>普票红票多行免税、不征税和0税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST035的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV096</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+		<Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>ZPVZKCheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPV096</TargetDataList>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV096</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>JPCZKcheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST035</TargetDataList>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST035</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST035</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST036</Bh>
+    <CaseName>普票红票最大8行普通单税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST036的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST036</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST036</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST036</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST036</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST036</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST036</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST037</Bh>
+    <CaseName>普票红票最大8行0税率作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST037的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST037</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST037</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST037</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST037</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST037</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST037</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST038</Bh>
+    <CaseName>普票红票最大8行免税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST038的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST038</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST038</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST038</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST038</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST038</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST038</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST039</Bh>
+    <CaseName>普票红票最大8行不征税作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST039的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST039</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST039</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST039</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLIST039check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST039</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST039</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST039</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST040</Bh>
+    <CaseName>普票红票最大8行不同普通税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST040的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV030</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST040</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST040</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST041</Bh>
+    <CaseName>普票红票最大8行普通税率和0税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST041的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST041</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST041</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST041</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST041</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST041</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST041</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST042</Bh>
+    <CaseName>普票红票最大8行普通税率和免税组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST042的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST042</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST042</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPWLIST042</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST042</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST042</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLIST042</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST042</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST043</Bh>
+    <CaseName>普票红票最大8行普通税率和不征税组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST043的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST043</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST043</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST043</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST043</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST043</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST043</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST044</Bh>
+    <CaseName>普票红票最大8行免税、不征税和0税率组合作废</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPFLIST044的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV097</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV097</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST044</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST044</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST044</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST044</TargetDataList>
+    </Step>
+	<Step id = "7">
+      <Name>查看详情</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST044</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST044</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST046</Bh>
+    <CaseName>作废已冲红蓝票</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV001的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "2">
+      <Name>查询发票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST046</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST046</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>作废蓝票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST046</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST046</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST047</Bh>
+    <CaseName>作废已作废蓝票</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV002的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "2">
+      <Name>查询发票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票作废</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST047</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询废票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST047</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>再次作废</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPFLIST047</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST047</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPZFLIST048</Bh>
+    <CaseName>红票作废后作废蓝票</CaseName>
+    <CaseId>51bs-2064</CaseId>
+    <Description>作废编号为PPV001的发票</Description>
+	<Step id = "1">
+      <Name>发票开具</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "2">
+      <Name>查询发票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPFLIST048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "4">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPFLIST048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "5">
+      <Name>作废红票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPMLIST048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>查询红票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPMLIST048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "7">
+      <Name>作废蓝票</Name>
+      <Keyword>IWASTE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPN048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "8">
+      <Name>作废检查</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+	  
+    </Step>
+	<Step id = "9">
+      <Name>查询蓝票</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPN048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+	<Step id = "10">
+      <Name>作废标志</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPMLISTcheck</DataList>
+      <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>PPFLIST048</TargetDataList>
+    </Step>
+  </TestCase>
+ 
+</Data>

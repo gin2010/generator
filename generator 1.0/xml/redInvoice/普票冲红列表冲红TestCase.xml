@@ -1,0 +1,1941 @@
+<?xml version="1.0" encoding="GBK" ?>
+<Data>
+
+  <TestCase>
+    <Bh>PPCHLIST003</Bh>
+    <CaseName>冲红已存在的蓝票发票代码、号码，冲红成功</CaseName>
+    <CaseId>51bs-2405</CaseId>
+    <Description>冲红编号为PPCLIST003的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST003check</DataList>
+      <TargetDataList>PPCLIST003</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST003check</DataList>
+      <TargetDataList>PPHLIST003</TargetDataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST004</Bh>
+    <CaseName>冲红已存在的部分冲红蓝票发票代码、号码，冲红成功</CaseName>
+    <CaseId>51bs-2405</CaseId>
+    <Description>冲红编号为PPCLIST004的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCVLIST004check</DataList>
+      <TargetProject>PPV001</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST004check</DataList>
+      <TargetDataList>PPCLIST004</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST004check</DataList>
+      <TargetDataList>PPHLIST004</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST004C</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "8">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST004Ccheck</DataList>
+      <TargetDataList>PPCLIST004C</TargetDataList>
+    </Step>
+    <Step id = "9">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST004C</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST004Ccheck</DataList>
+      <TargetDataList>PPHLIST004C</TargetDataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST005</Bh>
+    <CaseName>冲红已作废未冲红的蓝票，冲红失败</CaseName>
+    <CaseId>51bs-2405</CaseId>
+    <Description>冲红编号为PPCLIST005的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCVLIST005check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <DataList>PPFVLIST005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>是否作废成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFVLIST005check</DataList>
+      <TargetDataList>PPFVLIST005</TargetDataList>
+    </Step>
+
+    <Step id = "6">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "7">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST005check</DataList>
+      <TargetDataList>PPCLIST005</TargetDataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST006</Bh>
+    <CaseName>冲红蓝票未作废，有对应红票，红票全部作废，蓝票冲红成功</CaseName>
+    <CaseId>51bs-2405</CaseId>
+    <Description>冲红编号为PPCLIST006的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCVLIST006check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST006check</DataList>
+      <TargetDataList>PPCLIST006</TargetDataList>
+    </Step>
+    <Step id = "6">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHCLIST006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "7">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <DataList>PPFVLIST006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "8">
+      <Name>是否作废成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFVLIST006check</DataList>
+      <TargetDataList>PPFVLIST006</TargetDataList>
+    </Step>
+    <Step id = "9">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCCLIST006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "10">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCCLIST006check</DataList>
+      <TargetDataList>PPCCLIST006</TargetDataList>
+    </Step>
+		    <Step id = "11">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPCCLIST006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "12">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHCLIST006check</DataList>
+      <TargetDataList>PPCCLIST006</TargetDataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST007</Bh>
+    <CaseName>冲红蓝票未作废，有对应红票，作废部分红票，蓝票冲红成功</CaseName>
+    <CaseId>51bs-2405</CaseId>
+    <Description>冲红编号为PPCLIST007的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCVLIST007check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST007check</DataList>
+      <TargetDataList>PPCLIST007</TargetDataList>
+    </Step>
+    <Step id = "6">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHCLIST007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "7">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCCLIST007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "8">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCCLIST007check</DataList>
+      <TargetDataList>PPCCLIST007</TargetDataList>
+    </Step>
+    <!--<Step id = "9">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHCC007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>-->
+    <Step id = "10">
+      <Name>作废发票</Name>
+      <Keyword>IWASTE</Keyword>
+      <DataList>PPCCLIST007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "11">
+      <Name>是否作废成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPFVLIST007check</DataList>
+      <TargetDataList>PPCCLIST007</TargetDataList>
+    </Step>
+    <Step id = "12">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCCCLIST007</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "13">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCCCLIST007check</DataList>
+      <TargetDataList>PPCCCLIST007</TargetDataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST008</Bh>
+    <CaseName>冲红蓝票未作废，有对应红票，再次冲红金额大于剩余冲红金额，冲红失败</CaseName>
+    <CaseId>51bs-2405</CaseId>
+    <Description>冲红编号为PPCLIST008的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCVLIST008check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "5">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST008check</DataList>
+      <TargetDataList>PPCLIST008</TargetDataList>
+    </Step>
+    <Step id = "6">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHCLIST008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "7">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCCLIST008</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "8">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCCLIST008check</DataList>
+      <TargetDataList>PPCCLIST008</TargetDataList>
+    </Step>
+  </TestCase>
+
+
+  <TestCase>
+    <Bh>PPCHLIST009</Bh>
+    <CaseName>部分冲红单税率单行发票- 普通0税率发票</CaseName>
+      <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST009的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST009check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST009check</DataList>
+      <TargetDataList>PPCLIST009</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST009check</DataList>
+      <TargetDataList>PPHLIST009</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST009check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST010</Bh>
+    <CaseName>部分冲红单税率单行发票- 免税税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST010的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST010check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST010check</DataList>
+      <TargetDataList>PPCLIST010</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST010check</DataList>
+      <TargetDataList>PPHLIST010</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST010check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST011</Bh>
+    <CaseName>部分冲红单税率单行发票- 不征税税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST011的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>PPV010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST011check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST011check</DataList>
+      <TargetDataList>PPCLIST011</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST011check</DataList>
+      <TargetDataList>PPHLIST011</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST011check</DataList>
+    </Step>
+  </TestCase>
+  
+  
+    <TestCase>
+      <Bh>PPCHLIST012</Bh>
+      <CaseName>部分冲红单税率单行发票- 普通3%税率发票</CaseName>
+      <CaseId>51bs-2406</CaseId>
+      <Description>冲红编号为PPCLIST012的发票</Description>
+      <Step id = "1">
+        <Name>开票</Name>
+        <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+        <DataList>PPV002</DataList>
+        <TargetProject>CLOUD</TargetProject>
+      </Step>
+      <Step id = "2">
+        <Name>是否开具成功</Name>
+        <Keyword>CHECK</Keyword>
+        <DataList>PPCLIST012check</DataList>
+        <TargetProject>CLOUD</TargetProject>
+      </Step>
+      <Step id = "3">
+        <Name>发票冲红</Name>
+        <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+        <DataList>PPCLIST012</DataList>
+        <TargetProject>CLOUD</TargetProject>
+      </Step>
+      <Step id = "4">
+        <Name>是否冲红成功</Name>
+        <Keyword>CHECK</Keyword>
+        <DataList>PPCLIST012check</DataList>
+        <TargetDataList>PPCLIST012</TargetDataList>
+      </Step>
+      <Step id = "5">
+        <Name>发票查询</Name>
+        <Keyword>IDETAIL</Keyword>
+        <DataList>PPHLIST012</DataList>
+        <TargetProject>CLOUD</TargetProject>
+      </Step>
+      <Step id = "6">
+        <Name>是否查询成功</Name>
+        <Keyword>CHECK</Keyword>
+        <DataList>PPHLIST012check</DataList>
+        <TargetDataList>PPHLIST012</TargetDataList>
+      </Step>
+      <Step id = "7">
+        <Name>查询结果比对</Name>
+        <Keyword>CHECK</Keyword>
+        <DataList>PPGLIST012check</DataList>
+      </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST013</Bh>
+    <CaseName>部分冲红单税率3行发票- 普通0税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST013的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST013check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST013</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST013check</DataList>
+      <TargetDataList>PPCLIST013</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST013</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST013check</DataList>
+      <TargetDataList>PPHLIST013</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST013check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST014</Bh>
+    <CaseName>部分冲红单税率3行发票- 免税税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST014的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST014check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST014</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST014check</DataList>
+      <TargetDataList>PPCLIST014</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST014</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST014check</DataList>
+      <TargetDataList>PPHLIST014</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST014check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST015</Bh>
+    <CaseName>部分冲红单税率3行发票- 不征税税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST015的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST015check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST015</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST015check</DataList>
+      <TargetDataList>PPCLIST015</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST015</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST015check</DataList>
+      <TargetDataList>PPHLIST015</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST015check</DataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <Bh>PPCHLIST016</Bh>
+    <CaseName>部分冲红单税率3行发票- 普通6%税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST016的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV015</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST016check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST016check</DataList>
+      <TargetDataList>PPCLIST016</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST016</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST016check</DataList>
+      <TargetDataList>PPHLIST016</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST016check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST017</Bh>
+    <CaseName>部分冲红多税率3行发票- 11%-13%-17%税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST017的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV021</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST017check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST017</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST017check</DataList>
+      <TargetDataList>PPCLIST017</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST017</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST017check</DataList>
+      <TargetDataList>PPHLIST017</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST017check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST018</Bh>
+    <CaseName>部分冲红多税率3行发票- 0%-4%-5%税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST018的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST018check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST018</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST018check</DataList>
+      <TargetDataList>PPCLIST018</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST018</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST018check</DataList>
+      <TargetDataList>PPHLIST018</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST018check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST019</Bh>
+    <CaseName>部分冲红多税率3行发票-6%-11%-13%税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST019的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST019check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST019check</DataList>
+      <TargetDataList>PPCLIST019</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST019</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST019check</DataList>
+      <TargetDataList>PPHLIST019</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST019check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST020</Bh>
+    <CaseName>部分冲红多税率3行发票-0%-11%-13%税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST020的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV024</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST020check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST020check</DataList>
+      <TargetDataList>PPCLIST020</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST020</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST020check</DataList>
+      <TargetDataList>PPHLIST020</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST020check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST021</Bh>
+    <CaseName>部分冲红非清单8行单税率-0税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST021的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST021check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST021</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST021check</DataList>
+      <TargetDataList>PPCLIST021</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST021</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST021check</DataList>
+      <TargetDataList>PPHLIST021</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST021check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST022</Bh>
+    <CaseName>部分冲红非清单8行单税率-免税税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST022的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST022check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST022check</DataList>
+      <TargetDataList>PPCLIST022</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST022</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST022check</DataList>
+      <TargetDataList>PPHLIST022</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST022check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST023</Bh>
+    <CaseName>部分冲红非清单8行单税率-不征税税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST023的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV028</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST023check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST023check</DataList>
+      <TargetDataList>PPCLIST023</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST023</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST023check</DataList>
+      <TargetDataList>PPHLIST023</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST023check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST024</Bh>
+    <CaseName>部分冲红非清单8行单税率-普通3%税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST024的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST024check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST024</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST024check</DataList>
+      <TargetDataList>PPCLIST024</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST024</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST024check</DataList>
+      <TargetDataList>PPHLIST024</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST024check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST025</Bh>
+    <CaseName>部分冲红非清单8行多税率-0税率与普通税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST025的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV032</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST025check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST025check</DataList>
+      <TargetDataList>PPCLIST025</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST025</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST025check</DataList>
+      <TargetDataList>PPHLIST025</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST025check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST026</Bh>
+    <CaseName>部分冲红非清单8行多税率-免税率与普通税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST026的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV034</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST026check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST026check</DataList>
+      <TargetDataList>PPCLIST026</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST026</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST026check</DataList>
+      <TargetDataList>PPHLIST026</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST026check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <Bh>PPCHLIST027</Bh>
+    <CaseName>部分冲红非清单8行多税率-不征税率与普通税率发票</CaseName>
+    <CaseId>51bs-2406</CaseId>
+    <Description>冲红编号为PPCLIST027的发票</Description>
+    <Step id = "1">
+      <Name>开票</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPV035</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否开具成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST027check</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "3">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST027check</DataList>
+      <TargetDataList>PPCLIST027</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST027</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "6">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST027check</DataList>
+      <TargetDataList>PPHLIST027</TargetDataList>
+    </Step>
+    <Step id = "7">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST027check</DataList>
+    </Step>
+  </TestCase>
+
+ 
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST039</Bh>
+    <CaseName>全部冲红单税率单行发票- 普通0税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST039的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST039</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST039check</DataList>
+      <TargetDataList>PPCLIST039</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST039</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST039check</DataList>
+      <TargetDataList>PPHLIST039</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST039check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST040</Bh>
+    <CaseName>全部冲红单税率单行发票- 免税税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST040的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST040check</DataList>
+      <TargetDataList>PPCLIST040</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST040</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST040check</DataList>
+      <TargetDataList>PPHLIST040</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST040check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST041</Bh>
+    <CaseName>全部冲红单税率单行发票- 不征税税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST041的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST041</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST041check</DataList>
+      <TargetDataList>PPCLIST041</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST041</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST041check</DataList>
+      <TargetDataList>PPHLIST041</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST041check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST042</Bh>
+    <CaseName>全部冲红单税率单行发票- 普通3%税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST042的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST042</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST042check</DataList>
+      <TargetDataList>PPCLIST042</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST042</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST042check</DataList>
+      <TargetDataList>PPHLIST042</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST042check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST043</Bh>
+    <CaseName>全部冲红单税率3行发票- 普通0税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST043的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST043</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST043check</DataList>
+      <TargetDataList>PPCLIST043</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST043</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST043check</DataList>
+      <TargetDataList>PPHLIST043</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST043check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST044</Bh>
+    <CaseName>全部冲红单税率3行发票- 免税税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST044的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST044</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST044check</DataList>
+      <TargetDataList>PPCLIST044</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST044</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST044check</DataList>
+      <TargetDataList>PPHLIST044</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST044check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST045</Bh>
+    <CaseName>全部冲红单税率3行发票- 不征税税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST045的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST045</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST045check</DataList>
+      <TargetDataList>PPCLIST045</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST045</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST045check</DataList>
+      <TargetDataList>PPHLIST045</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST045check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST046</Bh>
+    <CaseName>全部冲红单税率3行发票- 普通6%税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST046的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST046</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST046check</DataList>
+      <TargetDataList>PPCLIST046</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST046</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST046check</DataList>
+      <TargetDataList>PPHLIST046</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST046check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST047</Bh>
+    <CaseName>全部冲红单税率3行发票- 11%-13%-17%税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST047的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST047</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST047check</DataList>
+      <TargetDataList>PPCLIST047</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST047</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST047check</DataList>
+      <TargetDataList>PPHLIST047</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST047check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST048</Bh>
+    <CaseName>全部冲红非清单单税率8行发票- 普通0税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST048的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST048check</DataList>
+      <TargetDataList>PPCLIST048</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST048</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST048check</DataList>
+      <TargetDataList>PPHLIST048</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST048check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST049</Bh>
+    <CaseName>全部冲红非清单单税率8行发票- 免税税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST049的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST049</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST049check</DataList>
+      <TargetDataList>PPCLIST049</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST049</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST049check</DataList>
+      <TargetDataList>PPHLIST049</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST049check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST050</Bh>
+    <CaseName>全部冲红非清单单税率8行发票- 不征税税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST050的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST050</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST050check</DataList>
+      <TargetDataList>PPCLIST050</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST050</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST050check</DataList>
+      <TargetDataList>PPHLIST050</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST050check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST051</Bh>
+    <CaseName>全部冲红非清单单税率8行发票- 普通3%税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST051的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST051</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST051check</DataList>
+      <TargetDataList>PPCLIST051</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST051</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST051check</DataList>
+      <TargetDataList>PPHLIST051</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST051check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST052</Bh>
+    <CaseName>全部冲红非清单多税率8行发票- 0税率与普通税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST052的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST052</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST052check</DataList>
+      <TargetDataList>PPCLIST052</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST052</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST052check</DataList>
+      <TargetDataList>PPHLIST052</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST052check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST053</Bh>
+    <CaseName>全部冲红非清单多税率8行发票- 免税税率与普通税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST053的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST053</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST053check</DataList>
+      <TargetDataList>PPCLIST053</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST053</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST053check</DataList>
+      <TargetDataList>PPHLIST053</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST053check</DataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>PPCHLIST054</Bh>
+    <CaseName>全部冲红非清单多税率8行发票- 不征税与普通税率发票</CaseName>
+    <CaseId>51bs-2411</CaseId>
+    <Description>冲红编号为PPCLIST054的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <SubKeyword>LIST</SubKeyword>
+      <DataList>PPCLIST054</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPCLIST054check</DataList>
+      <TargetDataList>PPCLIST054</TargetDataList>
+    </Step>
+    <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>PPHLIST054</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPHLIST054check</DataList>
+      <TargetDataList>PPHLIST054</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>PPGLIST054check</DataList>
+    </Step>
+  </TestCase>
+</Data>

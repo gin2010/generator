@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="GBK" ?>
+<Data>
+ 
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCHS001</Bh>
+    <CaseName>验证电子-单行明细-5税率-含税，发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCHS001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS001</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCHS001</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS001</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZCHS001check</DataList>
+	   <TargetDataList>DZVCHS001</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCHS002</Bh>
+    <CaseName>验证电子-单行明细-不征税-6开头-含税发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCHS002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS002</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCHS002</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS002</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZCHS002check</DataList>
+	   <TargetDataList>DZVCHS002</TargetDataList>
+    </Step>
+  </TestCase>
+
+ <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCHS003</Bh>
+    <CaseName>验证电子-多行明细多税率-普通税率-3行-6%-10%-16%-含税，发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCHS003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS003</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCHS003</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS003</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZCHS003check</DataList>
+	   <TargetDataList>DZVCHS003</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCHS004</Bh>
+    <CaseName>验证电子-多行明细多税率-普通税率-3行-3%-5%-5%-含税发票冲红成功</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCHS004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS004</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCHS004</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS004</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZCHS004check</DataList>
+	   <TargetDataList>DZVCHS004</TargetDataList>
+    </Step>
+  </TestCase>
+
+  <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCHS005</Bh>
+    <CaseName>验证填开-电子-最大行非清单-多税率-普通8行-普通税率10%-6%-16%-17%-6%-13%-17%-11%含税</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCHS005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS005</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCHS005</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS005</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZCHS005check</DataList>
+	   <TargetDataList>DZVCHS005</TargetDataList>
+    </Step>
+  </TestCase>
+  
+   <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCHS006</Bh>
+    <CaseName>验证电子-最小行数清单-清单行数10行-单税率-9行-5税率-含税</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCHS006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS006</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCHS006</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS006</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZCHS006check</DataList>
+	   <TargetDataList>DZVCHS006</TargetDataList>
+    </Step>
+  </TestCase>
+  
+ 
+
+<TestCase>
+    <!--特殊冲红-->
+    <Bh>DZVCHS009</Bh>
+    <CaseName>特殊冲红-不含税</CaseName>
+    <CaseId>51bs-2401</CaseId>
+    <Description>冲红编号为DZC001的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCHS009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS009</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCHS009</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS009</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZCHS009check</DataList>
+	   <TargetDataList>DZVCHS009</TargetDataList>
+    </Step>
+  </TestCase>
+  
+    <TestCase>
+    <!--全部冲红-->
+    <Bh>DZVCHS010</Bh>
+    <CaseName>验证电子票-最大行数清单总行数100-多税率-100行-普通税率组合(3%,4%,5%,6%,10%、11%,13%,16%、17%)含税</CaseName>
+    <CaseId>51bs-2402</CaseId>
+    <Description>冲红编号为DZC013的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCHS010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS010</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCHS010</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS010</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZCHS010check</DataList>
+	   <TargetDataList>DZVCHS010</TargetDataList>
+    </Step>
+  </TestCase>
+  
+  <TestCase>
+    <!--特殊冲红-->
+    <Bh>DZVCHS011</Bh>
+    <CaseName>特殊冲红-含税</CaseName>
+    <CaseId>51bs-2401</CaseId>
+    <Description>冲红编号为DZC001的发票</Description>
+    <Step id = "1">
+      <Name>发票冲红</Name>
+      <Keyword>IISSUE</Keyword>
+      <DataList>DZVCHS011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+   <Step id = "2">
+      <Name>是否冲红成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHScheck</DataList>
+	  <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS011</TargetDataList>
+    </Step>
+   <Step id = "3">
+      <Name>发票查询</Name>
+      <Keyword>IDETAIL</Keyword>
+      <DataList>DZVCHS011</DataList>
+      <TargetProject>CLOUD</TargetProject>
+    </Step>
+    <Step id = "4">
+      <Name>是否查询成功</Name>
+      <Keyword>CHECK</Keyword>
+      <DataList>DZCHSDetailcheck</DataList>
+	   <TargetProject>CLOUD</TargetProject>
+      <TargetDataList>DZVCHS011</TargetDataList>
+    </Step>
+    <Step id = "5">
+      <Name>查询结果比对</Name>
+      <Keyword>CHECK</Keyword>
+	  <TargetProject>CLOUD</TargetProject>
+      <DataList>DZCHS011check</DataList>
+	   <TargetDataList>DZVCHS011</TargetDataList>
+    </Step>
+  </TestCase>
+
+  
+  
+
+</Data>

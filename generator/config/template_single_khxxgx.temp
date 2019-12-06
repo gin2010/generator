@@ -1,0 +1,25 @@
+{
+	"zipCode": "0",
+	"encryptCode": "2",
+	"access_token": "@@token",
+	"datagram": {
+		"fjh": "0",
+		"ybm": "10004",
+		"bm": "30004",
+		"ghfmc": "中信银行9999",
+		"jm": "ZX99",
+		"sjbm": "",
+		"kjm": "zx99",
+		"ghf_nsrsbh": "913702008636999999",
+		"ghf_dzdh": "北京市东大街10号路 010-66669999",
+		"ghf_yhzh": "青岛银行 000-66669999",
+		"ghf_yjdz": "9999999@gong.com",
+		"bz": "备注999",
+		"yskm": "应收科目999",
+		"dqbm": "1101099999",
+		"dqmc": "地区名称999",
+		"dqkm": "地区科目999",
+		"sfzjy": "1",
+		"certpwd": "12345678"
+	}
+}
