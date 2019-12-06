@@ -4,7 +4,9 @@
 	"access_token": "@@token",
 	"datagram": {
 		"fjh": "0",
-		"bm": "003",
-		"certpwd": "12345678"
+		"cxys": "1",
+		"ts": "20",
+		"certpwd": "12345678",
+		"requestDate":"20191102"
 	}
 }
