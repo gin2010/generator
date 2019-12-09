@@ -106,7 +106,8 @@ class Generator(object):
             2将内层报文参数inner_param的值修改为inner_param_value并返回
         :param temp:从template里加载的内层报文
         :param start:从excel模板common中读取的start，用于控制发票号码等需要变化的值
-        :return requests: 每行生成的新temp，及其他需要加入到写入到数据库字段的值
+        :param data:从excel模板case sheet中读取的每一行值组成的列表
+        :return (data[0] + "-" + l[0],temp): （描述，request_sql_param）
         """
         # 修改模板中发票号码
         get_string = GetString(self.logger)
@@ -156,7 +157,7 @@ class Generator(object):
         # cases对应mysql一条用例，cases为字典类型、key与mysql里的值相同
         cases = self._read_common_sheet(case_path)
         datas = self._read_case_sheet(case_path)
-        self.logger.debug(["{}-type:{}".format(cases,type(cases))])
+        self.logger.debug(["{}-type:{}".format(cases, type(cases))])
         self.logger.debug(["{}-type:{}".format(datas, type(datas))])
         # 连接mysql数据库
         mysql = OperateMysql(self.logger)
@@ -167,13 +168,12 @@ class Generator(object):
             temp_one = copy.deepcopy(self.temp)
             requests = self.generate_request_json(temp_one, cases["start"], row)
             for request in requests:
-                # case_datas的结构如下：
-                # [{'resquest_param': 'fp_dm','param_sort': 'VARCHAR', 'length': '10'},
-                #  {'resquest_param': 'kprq', 'param_sort': 'DATETIME', 'length': ''}]
-                self.logger.debug(["request:", request])
+                # requests的结构如下：
+                # (用例描述,request_sql_param的值)，用的yield返回，调用一次返回一条
+                self.logger.error(["request:", request])
                 step += 1
-                cases = self.update_cases(cases,step,request)
-                mysql.insert_sql(cases)
+                case = self.update_cases(cases,step,request)
+                mysql.insert_sql(case)
             step += 10
         mysql.close()
 
