@@ -62,9 +62,12 @@ class Log:
         日志输出到控制台和文件中
         :return:
         """
+        # 日志输出到控制台
         self._log_to_control()
+        # 日志输出到文件
         self._log_to_file()
         return self.logger
+
 
 if __name__ == "__main__":
     lg = Log("logset.log",20)

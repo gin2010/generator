@@ -59,14 +59,35 @@ class OperateMysql:
 
 
     def insert_sql(self,data):
-
         # 插入数据
         sql = '''INSERT INTO step_data (case_id, step,test_desc,http_method,url_sql,out_put,request_sql_param,request_name) VALUES ('{case_id}','{step}','{test_desc}','{http_method}','{url_sql}','{out_put}','{request_sql_param}','{request_name}')'''
         sql = sql.format(**data)
         self.logger.info(sql)
         self.cursor.execute(sql)
         self.db.commit()
-        self.logger.warning(f"case_id:{data['case_id']}&step:{data['step']}&&{data['request_name']}插入成功")
+        self.logger.warning(f"case_id:{data['case_id']}&step:{data['step']}&&{data['request_name']}-->插入成功")
+
+
+    def update_sql(self,step,target_key,data):
+        # 修改数据
+        sql = '''update step_data set %s = '{expected_modify}' where case_id=1116008 and step = %s;'''%(target_key,step)
+        sql = sql.format(**data)
+        self.logger.info(sql)
+        self.cursor.execute(sql)
+        self.db.commit()
+        self.logger.warning(f"step:{step} -->修改成功！")
+
+
+    def query_sql(self,):
+        sql = "SELECT step,expected_result FROM `step_data` where case_id=1116008;"
+        self.logger.info(sql)
+        self.cursor.execute(sql)
+        # data = self.cursor.fetchmany(3) # 查询三条记录
+        # data = self.cursor.fetchone()  # 查询单条
+        data = self.cursor.fetchall()  # 查询全部
+        self.db.commit()
+        self.logger.warning(f"查询数据成功！")
+        return data
 
 
 if __name__ =="__main__":
