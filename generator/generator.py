@@ -22,7 +22,7 @@ from tool.operateMysqlClass import OperateMysql
 tool = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tool")
 sys.path.append(tool)
 from tool.generatorCase import Generator
-from tool.searchDict import search_dict_key
+from tool.searchDict import search_dict_key,search_dict
 from randomStringClass import GetString
 
 
@@ -109,6 +109,26 @@ class Generator_tycx(Generator):
         return case
 
 
+class Generator_S_FPCJ(Generator):
+
+    # 修改父类的模板
+    # 测试single用例生成
+    def __init__(self):
+        super().__init__()  # 初始化父类
+
+    def modify_temp_other(self,temp,step,**kwargs):
+        '''
+        增加此方法提高复用性
+        可以根据需要传入接口中需要变化的值，比如 fphm,nsrsbh。
+        使用step来实现值的累加，这样就不用全局变量了
+        :param temp:
+        :param kwargs:内部值的key-value
+        :return:
+        '''
+        kwargs['FPHM'] = str(int(kwargs['FPHM']) + step -10000)
+        temp = search_dict(temp,**kwargs)
+        return temp
+
 
 def single_demo():
     # 测试single，值传入1
@@ -137,6 +157,15 @@ def fpqz_json():
     # generate2 = Generator()
     # generate2.generate_case(2)
 
+def fpcj_json():
+    # 发票采集json
+    generate1 = Generator_S_FPCJ()
+    # single
+    generate1.generate_case(1)
+    # multiple
+    # generate2 = Generator()
+    # generate2.generate_case(2)
+
 
 def main():
     #interface_name = Generator().interface_name #初始化整个类，效率低
@@ -149,6 +178,7 @@ def main():
                   "multiple_demo":multiple_demo,
                   "tycx":tycx,
                   "fpqz_json":fpqz_json,
+                  "fpcj_json":fpcj_json,
                   }
     controller.get(interface_name)()
 

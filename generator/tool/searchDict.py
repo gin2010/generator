@@ -61,14 +61,30 @@ def search_dict_key(temp,target_key,target_value):
                 search_dict_key(l, target_key.strip(), target_value)
     return temp
 
-
 # 20191227 增加可以直接传入字典
 def search_dict(temp, **kwargs):
     for key in kwargs.keys():
         temp = search_dict_key(temp, key, kwargs[key])
     return temp
 
+# 20191230 增加可以直接删除某个值
+def del_dict_key(temp,target_key):
+    # target_key两边空格可能会影响字典相应值的查询
+    for k in temp:
+        if k == target_key.strip():
+            del temp[k]
+            # print(f"if 中 {k}")
+            break
+        elif isinstance(temp[k], dict):
+            del_dict_key(temp[k],target_key.strip())
+        elif isinstance(temp[k],list):
+            for l in temp[k]:
+                del_dict_key(l, target_key.strip())
+    return temp
+
 
 if __name__ == "__main__":
-    new_temp = search_dict_key(TEMPLATE, "ZFLSH", '-----aaaaa-----')
+    # new_temp = search_dict_key(TEMPLATE, "ZFLSH", '-----aaaaa-----')
+    # print(new_temp)
+    new_temp = del_dict_key(TEMPLATE, "FP_KJ")
     print(new_temp)

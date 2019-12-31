@@ -13,7 +13,7 @@ import configparser,copy,time
 from operateMysqlClass import OperateMysql
 from randomStringClass import GetString
 from logSetClass import Log
-from tool.searchDict import search_dict_key,search_dict
+from tool.searchDict import search_dict_key,search_dict,del_dict_key
 
 
 class Generator(object):
@@ -110,7 +110,7 @@ class Generator(object):
 
 
     # 20191227增加此方法
-    def modify_temp(self,temp,step,**kwargs):
+    def modify_temp_other(self,temp,step,**kwargs):
         '''
         增加此方法提高复用性
         可以根据需要传入接口中需要变化的值，比如 fphm,nsrsbh。
@@ -149,7 +149,10 @@ class Generator(object):
         else:
             string_list = get_string.random_string_main(data[1], int(data[2]))
         for l in string_list:
-            temp = search_dict_key(temp,data[0],l[1])
+            if l[1] == "DEL":
+                temp = del_dict_key(temp,data[0])
+            else:
+                temp = search_dict_key(temp,data[0],l[1])
             yield (data[0] + "-" + l[0],temp)
 
 
@@ -166,7 +169,7 @@ class Generator(object):
         case["test_desc"] = case["test_desc"] + "--"+ request[0]
         case["request_name"] = request[0]
         # 20191227 增加修改模板其他变量的函数
-        temp = self.modify_temp(request[1],step,**temp_changes)
+        temp = self.modify_temp_other(request[1],step,**temp_changes)
         case["request_sql_param"] = json.dumps(temp, ensure_ascii=False)
         return case
 

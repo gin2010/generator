@@ -87,10 +87,10 @@ class GetString:
             self.symbols = self.symbols.replace(s,"")
         self.logger.debug(self.symbols)
         self.logger.debug("symbol is ok")
-        # self.strings = list()
 
 
-    def _random_count(self,sort,length):
+    @staticmethod
+    def _random_count(sort,length):
         """
         根据传入的sort列表中数据类型及总长度length，生成sort中每种数据类型的长度，合计长度 = length
         :param length:
@@ -142,8 +142,8 @@ class GetString:
         results = "".join(result)
         return results
 
-
-    def _random_int_and_double(self,ninteger=1,ndigit=0):
+    @staticmethod
+    def _random_int_and_double(ninteger=1,ndigit=0):
         """
         按位置生成小数、浮点类型
         :param ninteger:整数位数
@@ -154,7 +154,6 @@ class GetString:
         if ndigit != 0:
             results = results/(10**ndigit)
         return str(results)
-
 
     def _random_datetime(self,start_year,end_year):
         """
@@ -256,6 +255,8 @@ class GetString:
         # 26生成length-1位的小写字母
         if length - 1 >= 1:
             results.append([f"生成{length-1}位的小写字母F", self._random_string_multiple(['ZMX'], length - 1)])
+        # 27删除此节点
+        results.append(["删除报文中此节点F",'DEL'])
         self.logger.info(results)
         return results
 
@@ -359,6 +360,8 @@ class GetString:
         # 33生成length-1位的小写字母
         if length - 1 >= 1:
             results.append([f"生成{length-1}位的小写字母F", self._random_string_multiple(['ZMX'], length - 1)])
+        # 34删除此节点
+        results.append(["删除报文中此节点F",'DEL'])
         self.logger.debug(results)
         return results
 
@@ -429,7 +432,9 @@ class GetString:
         # 23 日期为null值
         results.append(["日期为null值F", None])
         # 24 sql注入 "or"1"="1
-        # results.append(["sql注入F", self._random_datetime(2019, 2019) + "''or''1''=''1"])
+        results.append(["sql注入F", self._random_datetime(2019, 2019) + "''or''1''=''1"])
+        # 25删除此节点
+        results.append(["删除报文中此节点F",'DEL'])
         self.logger.debug(results)
         return results
 
@@ -486,6 +491,9 @@ class GetString:
         results.append(["生成null值F", None])
         # 17sql注入 "or"1"="1
         results.append(["sql注入F", str(self._random_int_and_double(1)) + "''or''1''=''1"])
+        # 18删除此节点
+        results.append(["删除报文中此节点F",'DEL'])
+        self.logger.debug(results)
         return results
 
 
@@ -543,6 +551,9 @@ class GetString:
         results.append(["生成null值F", None])
         # 17sql注入 "or"1"="1
         results.append(["sql注入F", str(self._random_int_and_double(1, 3)) + "''or''1''=''1"])
+        # 18删除此节点
+        results.append(["删除报文中此节点F",'DEL'])
+        self.logger.debug(results)
         return results
 
 
@@ -577,7 +588,6 @@ class SortError(Exception):
 
     def __str__(self):
         return self.errorinfo
-
 
 
 
