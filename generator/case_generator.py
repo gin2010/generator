@@ -1,19 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Date : 2019/10/12
 # @Author : water
-# @Version  : v1.2
-# @Desc  :重新做了抽象，每次改写generate_request_json与update_cases方法即可
-#         generate_request_json：影响的是写入数据库中request_sql_param内容；
-#         update_cases:影响最终传入到mysql insert语句中全部值的字典；
-#         发票采集模板使用：
-#         1修改发票号码、发票代码；
-#         2将内层报文参数inner_param的值修改为inner_param_value并返回
-#         :param temp:内层报文（从模板文件中读取的）
-#         :param step:测试用例step（从excel模板common中读取的step）
-#         :param fphm:发票号码（从excel模板common中读取的起始发票号码）
-#         :param inner_key:内层报文中需要更新的key（从excel模板case中读取的每一行request_param的值），相当于每次修改的字段
-#         :param inner_value:内层报文中需要更新的key对应的value（GetString返回的字段值，一次传入一个）
-#         :return temp: 转换为json格式的内层报文，写入到数据库request_sql_param的内容
+# @Version  : v1.3
+# @Desc  :主程序，直接运行此程序即可
 
 
 import json,sys,os,copy,xlrd,configparser

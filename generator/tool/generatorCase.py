@@ -110,16 +110,18 @@ class Generator(object):
 
 
     # 20191227增加此方法
-    def modify_temp_other(self,temp,step,**kwargs):
+    def modify_temp_other(self,temp,step,target_key,**kwargs):
         '''
         增加此方法提高复用性
         可以根据需要传入接口中需要变化的值，比如 fphm,nsrsbh。
         使用step来实现值的累加，这样就不用全局变量了
         :param temp:
+        :param target_key:本次修改的模板里的值，如果是fp_hm，则无需再顺序编号
         :param kwargs:内部值的key-value
         :return:
         '''
-        kwargs['fp_hm'] = str(int(kwargs['fp_hm']) + step -10000)
+        # kwargs['fp_hm'] = str(int(kwargs['fp_hm']) + step - 10000)
+        kwargs.pop(target_key,None)  # 20200107-从字典里删除target_key(会影响到fpdm的数据)
         temp = search_dict(temp,**kwargs)
         return temp
 
@@ -137,7 +139,6 @@ class Generator(object):
         :param data:从excel模板case sheet中读取的每一行值组成的列表
         :return (test_desc,temp): （用例描述，request_sql_param）
         """
-        # 修改模板中发票号码
         get_string = GetString(self.logger)
         if isinstance(data[2], str):
             # 对于double类型，分开总长度与小数位数
@@ -159,7 +160,7 @@ class Generator(object):
     def update_cases(self,case,step,request,temp_changes):
         """
         用于修改每次最后写入到mysql里各个字段的值
-        :param case: 字典类型，存放mysql中部分字段对应的值
+        :param case: submarine里面一条用例脚本全部值组成的字典
         :param step: 每次变化的step
         :param request:存放request_sql_param里的值及描述等
         :return:写入数据库的一条用例值组成的字典
@@ -168,8 +169,9 @@ class Generator(object):
         case["step"] = step
         case["test_desc"] = case["test_desc"] + "--"+ request[0]
         case["request_name"] = request[0]
+        target_key = request[0].split("-")[0]
         # 20191227 增加修改模板其他变量的函数
-        temp = self.modify_temp_other(request[1],step,**temp_changes)
+        temp = self.modify_temp_other(request[1],step,target_key,**temp_changes)
         case["request_sql_param"] = json.dumps(temp, ensure_ascii=False)
         return case
 

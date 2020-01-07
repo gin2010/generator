@@ -10,14 +10,18 @@ import logging,os,json
 
 class OperateMysql:
 
-    def __init__(self,logger):
+    def __init__(self,logger=None):
         CONFIG_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config","generator.ini")
         # 加载generator.ini
         config = configparser.RawConfigParser()
         config.read(CONFIG_FILE,encoding="utf-8")  # 读取文件
 
         # 日志配置
-        self.logger = logger
+        if logger != None:
+            self.logger = logger
+        else:
+            logging.basicConfig(level=log_level, format='%(asctime)s - %(levelname)s - %(message)s')
+            self.logger = logging.getLogger(__name__)
         '''
         20191012单独在每个文件中配置一份，会出现重复打印的问题
         log_name = "generator.log"
