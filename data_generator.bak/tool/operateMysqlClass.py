@@ -16,7 +16,7 @@ class OperateMysql:
         # 加载generator.ini
         config = configparser.RawConfigParser()
         config.read(config_file,encoding="utf-8")  # 读取文件
-
+        log_level = int(config.get("logging", "level"))
         # 日志配置
         if logger != None:
             self.logger = logger
@@ -55,6 +55,8 @@ class OperateMysql:
         self.db.close()
         self.logger.warning("mysql closed!!")
 
+    def get_attr(self):
+        return (self.cursor,self.db)
 
     def insert_sql(self,data):
         # 插入数据
@@ -92,7 +94,7 @@ if __name__ =="__main__":
     logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
     logger = logging.getLogger(__name__)
     opsql = OperateMysql(logger)
-    case_id = 24230002
+    case_id = 24230004
     step = 11
     test_desc = "测试数据库2"
     http_method = "post"

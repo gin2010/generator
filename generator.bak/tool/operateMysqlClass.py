@@ -7,23 +7,29 @@ import pymysql,configparser
 import logging,os,json
 #from logSetClass import Log
 
-PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 class OperateMysql:
 
     def __init__(self,logger=None):
-        config_file = os.path.join(PATH, "config","data_generator.ini")
+        CONFIG_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config","generator.ini")
         # 加载generator.ini
         config = configparser.RawConfigParser()
-        config.read(config_file,encoding="utf-8")  # 读取文件
-        log_level = int(config.get("logging", "level"))
+        config.read(CONFIG_FILE,encoding="utf-8")  # 读取文件
+
         # 日志配置
         if logger != None:
             self.logger = logger
         else:
             logging.basicConfig(level=log_level, format='%(asctime)s - %(levelname)s - %(message)s')
             self.logger = logging.getLogger(__name__)
-
+        '''
+        20191012单独在每个文件中配置一份，会出现重复打印的问题
+        log_name = "generator.log"
+        log_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'log', log_name)
+        log_level = int(config.get("logging", "level"))
+        log = Log(log_file,log_level)
+        self.logger = log.control_and_file()
+        '''
         """
         logging.basicConfig(level=log_level, format='%(asctime)s - %(levelname)s - %(message)s')
         self.logger = logging.getLogger(__name__)
@@ -55,8 +61,6 @@ class OperateMysql:
         self.db.close()
         self.logger.warning("mysql closed!!")
 
-    def get_attr(self):
-        return (self.cursor,self.db)
 
     def insert_sql(self,data):
         # 插入数据
@@ -94,7 +98,7 @@ if __name__ =="__main__":
     logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
     logger = logging.getLogger(__name__)
     opsql = OperateMysql(logger)
-    case_id = 24230004
+    case_id = 24230002
     step = 11
     test_desc = "测试数据库2"
     http_method = "post"

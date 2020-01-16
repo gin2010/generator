@@ -15,7 +15,7 @@
 #         :param inner_value:内层报文中需要更新的key对应的value（GetString返回的字段值，一次传入一个）
 #         :return temp: 转换为json格式的内层报文，写入到数据库request_sql_param的内容
 
-
+"""
 import json,sys,os,copy,xlrd,configparser
 from tool.operateMysqlClass import OperateMysql
 # 添加tool工具包到系统变量中
@@ -184,3 +184,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
