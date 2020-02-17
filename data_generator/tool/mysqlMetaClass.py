@@ -17,12 +17,12 @@ class MysqlMetaClass(type):
         for k,v in attrs.items():
             if not k.startswith("__"):
                 all_attrs[k] = v
-        print("all_attrs---->",all_attrs)
+        # print("all_attrs---->",all_attrs)
         for k in all_attrs.keys():
             attrs.pop(k)
         attrs['__attrs__'] = all_attrs
         attrs['__table__'] = name.lower()
-        print("attrs---->",attrs)
+        # print("attrs---->",attrs)
         return super().__new__(cls,name,p_class,attrs)
 
 
@@ -30,9 +30,18 @@ class Model(metaclass=MysqlMetaClass):
     def __init__(self,**kwargs):
         for k,v in kwargs.items():
             setattr(self,k,v) # 初始化实例对象中的变量
+        print(self.__table__) # 表名
+        print(self.__attrs__) # 变量名与表名、表类型对应值
+        print(self.__dict__) #
 
     def insert(self):
-        pass
+        insert_keys = list()
+        insert_values = list()
+        for k,v in self.__dict__.items():
+            insert_keys.append(self.__attrs__[k][0])
+            insert_values.append(v)
+        sql = '''insert into {} ({}) values ({}) '''.format(self.__table__,",".join(insert_keys),",".join(insert_values))
+        print(sql)
 
     def update(self):
         pass
@@ -73,7 +82,7 @@ def main():
         "request_name": "测试"
     }
     t = Step_Data(**case)
-    print(t.test_desc)
+    # print(t.test_desc)
     t.insert()
 
 if __name__ == "__main__":
