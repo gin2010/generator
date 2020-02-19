@@ -1,6 +1,0 @@
-2020-02-19 17:18:08,310 -/Users/water/gin/git/generator/generator/tool/generatorCase.py[line:37] -WARNING:case_generator.ini
-2020-02-19 17:18:08,384 -/Users/water/gin/git/generator/generator/tool/generatorCase.py[line:281] -ERROR:case(差额征税蓝票全额冲红普通蓝票-开蓝票-) is wrong
-2020-02-19 17:18:35,891 -/Users/water/gin/git/generator/generator/tool/generatorCase.py[line:37] -WARNING:case_generator.ini
-2020-02-19 17:18:35,964 -/Users/water/gin/git/generator/generator/tool/generatorCase.py[line:281] -ERROR:case(差额征税蓝票全额冲红普通蓝票-开蓝票-) is wrong
-2020-02-19 17:18:48,519 -/Users/water/gin/git/generator/generator/tool/generatorCase.py[line:37] -WARNING:case_generator.ini
-2020-02-19 17:18:48,593 -/Users/water/gin/git/generator/generator/tool/generatorCase.py[line:281] -ERROR:case(普通蓝票冲红普通折扣票-全额冲红) is wrong
