@@ -50,7 +50,7 @@ def fpqz_json():
 
 @myroute("fpqz_json_data")
 def fpqz_json_data():
-    # 发票签章json
+    # 从fp数据库中生成发票签章json用例
     tables = [SJ_GZ,Yhzc_GZ]
     generate = Generator_Data_FPQZ(tables)
     generate.generate_case_main()

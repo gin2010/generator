@@ -3,6 +3,8 @@
 # @Author : water
 # @Version  : v1.2
 # @Desc  :自动生成单个字段的测试用例、根据excel表中的字段生成联合字段的测试用例及测试主流程
+#         case:用例数据库的一条用例k-v字典
+#         temp:内层报文模板
 
 import json,xlrd,os
 import configparser,copy,time
@@ -12,7 +14,7 @@ from logSetClass import Log
 from searchDict import search_dict_key,search_dict,del_dict_key
 from mysqlOrm import Interface_FPQZ,SJ_GZ
 
-PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # data_generator路径
+PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # generator路径
 
 class Generator(object):
 
@@ -50,6 +52,11 @@ class Generator(object):
         # 加载配置文件--加载明细字段
         self.mx_key = config.get("template","mx_key")
 
+    def xml_2_dict(self,temp):
+        pass
+
+    def dict_2_xml(self,temp):
+        pass
 
     def _read_common_sheet(self,path):
         '''
@@ -75,11 +82,12 @@ class Generator(object):
         return common_datas_dict
 
 
-    def get_keys(self,path):
+    # def get_keys(self,path):
+    def _read_temp_data(self,path):
         """
         读取用例表中的case sheet，并返回二维列表
         :param path:excel所在的路径
-        :yield :每行数据列表的生成器
+        :yield :每行数据列表4生成器
 
         """
         # 读取case sheet
@@ -165,11 +173,11 @@ class Generator(object):
         common_datas = self._read_common_sheet(case_path)  # 1.从excel加载公共数据
         # origin_case = copy.deepcopy(common_datas)
         step = int(common_datas["step"])
-        key_datas = self.get_keys(case_path)  # 2.从excel加载case中单个或多个字段数据
+        temp_datas = self._read_temp_data(case_path)  # 2.从excel加载case中单个或多个字段数据
         mysql = OperateMysql(self.config_file, self.logger) # 3.连接数据库
-        for key_data in key_datas:
-            # key_data ['FHDM','varchar','8']
-            (key,values_list) = self.generate_values(key_data)  # 4.生成单个或多个变量值
+        for temp_data in temp_datas:
+            # temp_data ['FHDM','varchar','8']
+            (key,values_list) = self.generate_values(temp_data)  # 4.生成单个或多个变量值
             for value in values_list:
                 # ["sql注入","1=1"]
                 temp_copy = copy.deepcopy(self.temp)
@@ -204,21 +212,129 @@ class Generator_M_Case(Generator):
     def __init__(self):
         super().__init__()  # 初始化父类
 
-    def generate_request_json(self,temp,data):
+    def split_temp(self,temp):
+        '''
+        将temp拆成两部分，主信息与明细（或清单）
+        :param temp:
+        :return:
+        '''
+        temp_mx = temp['kjmxs'][0]
+        return temp_mx
 
-        keys = data[2].split(sep="\n")
-        values = data[3].split(sep="\n")
-        if len(keys) == len(values):
-            for i in range(len(keys)):
-                temp = search_dict_key(temp, keys[i], values[i])
-            yield (data[1], temp)
-        else:
-            self.logger.error("data({}) is wrong".format(data))
-            return
+
+    # def _read_temp_data(self,path):
+    #     """
+    #     读取用例表中的case sheet，并返回二维列表
+    #     :param path:excel所在的路径
+    #     :yield :每行数据列表4生成器
+    #
+    #     """
+    #     # 读取case sheet
+    #     wb = xlrd.open_workbook(path)
+    #     case_sheet = wb.sheet_by_name("case")
+    #     max_row = case_sheet.nrows
+    #     max_column = case_sheet.ncols
+    #     for i in range(1,max_row):
+    #         desc = case_sheet.cell(i,1).value
+    #         key_list = case_sheet.cell(i,2).value.split('\n')
+    #         value_list = case_sheet.cell(i,3).value.split('\n')
+    #         # 明细数据用两层列表来存储
+    #         mx_lists = list()
+    #         for j in range(4,max_column):
+    #             if case_sheet.cell(i,j).value !="":
+    #                 mx_lists.append(case_sheet.cell(i,j).value.split('\n'))
+    #             else:
+    #                 break
+    #         if len(mx_lists) %2 ==0:
+    #             yield (desc,key_list,value_list,mx_lists)
+    #         else:
+    #             self.logger.error("case({}) is wrong".format(desc))
+    #             break
+
+    def _read_temp_data(self,path):
+        """
+        读取用例表中的case sheet，并返回二维列表
+        :param path:excel所在的路径
+        :yield :每行数据列表4生成器
+
+        """
+        wb = xlrd.open_workbook(path)
+        case_sheet = wb.sheet_by_name("case")
+        max_row = case_sheet.nrows
+        max_column = case_sheet.ncols
+        for i in range(1,max_row):
+            key_list = list()
+            value_list = list()
+            desc = case_sheet.cell(i,1).value
+            key = case_sheet.cell(i,2).value.split('\n')
+            value = case_sheet.cell(i,3).value.split('\n')
+            for v in range(len(value)):
+                if (key[v] not in ["GMF_NSRSBH","GMF_MC"]) and (value[v] not in ["", 'auto']):
+                    key_list.append(key[v])
+                    value_list.append(value[v])
+            # 明细数据用两层列表来存储
+            mx_lists = list()
+            for j in range(4,max_column):
+                if case_sheet.cell(i,j).value !="":
+                    mx_lists.append(case_sheet.cell(i,j).value.split('\n'))
+                else:
+                    break
+            if len(mx_lists) %2 == 0:
+                yield (desc,key_list,value_list,mx_lists)
+            else:
+                self.logger.error("case({}) is wrong".format(desc))
+                break
+
+
+    def generate_request_json(self,temp):
+        '''
+        标准的multiple用例生成，包含多明细
+        :param temp:
+        :return:
+        '''
+        file_path = os.path.join(PATH,'data','cases',self.case_excel)
+        datas = self._read_temp_data(file_path)
+        temp_mx = self.split_temp(self.temp)
+        for data in datas:
+            (desc, key_list, value_list, mx_lists) = data
+            temp_copy = copy.deepcopy(temp)
+            # 替换mx中的值
+            for i in range(len(mx_lists[0])):
+                temp_copy = search_dict_key(temp_copy,mx_lists[0][i].lower(),mx_lists[1][i])
+            if len(mx_lists)>=4:
+                for i in range(2,len(mx_lists),2):
+                    mx = copy.deepcopy(temp_mx)
+                    for j in range(len(mx_lists[i])):
+                        mx = search_dict_key(mx,mx_lists[i][j].lower(),mx_lists[i+1][j])
+                    temp_copy['kjmxs'].append(mx)
+            # 替换head中的值
+            if len(key_list) == len(value_list) :
+                for i in range(len(key_list)):
+                    temp_copy = search_dict_key(temp_copy, key_list[i].lower(), value_list[i])
+                yield (desc, temp_copy)
+            else:
+                self.logger.error("case({}) is wrong".format(desc))
+                return
+
+    def generate_case_main(self):
+        datas = self.generate_request_json(self.temp)
+        file_path = os.path.join(PATH,'data','cases',self.case_excel)
+        common_datas = self._read_common_sheet(file_path)  # 1.从excel加载公共数据
+        step = int(common_datas["step"])
+        mysql = OperateMysql(self.config_file, self.logger) # 2.连接数据库
+        # for temp_data in temp_datas:
+        for data in datas:
+            desc,temp_copy = data
+            self.logger.debug(desc)
+            self.logger.debug(temp_copy)
+            case = self.update_case(common_datas,step,temp_copy,desc)  # 3.将temp加入到case中，并修改case里其他值
+            mysql.insert_sql(case)  # 4.case插入到数据库中
+            step += 2
+        mysql.close()
 
 
 # class Generator_tycx(Generator):
-#
+#     # 针对用例单独处理
 #     # 20191206将统一查询excel用例步骤及数据写入到数据库中
 #     # 统一查询（ofd）
 #     def __init__(self):
